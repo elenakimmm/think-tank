@@ -373,34 +373,39 @@ input, textarea, select { font-family: inherit; color: inherit; }
    ============================================================ */
 .client-tabs {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   flex-wrap: wrap;
-  gap: 16px;
+  gap: 40px;
   margin-bottom: 60px;
+  border-bottom: 1px solid var(--hairline);
+  padding-bottom: 0;
 }
 
 .client-tab {
-  padding: 12px 20px;
-  border: 1px solid var(--hairline);
-  border-radius: 24px;
+  padding: 14px 0;
+  border: none;
+  border-bottom: 3px solid transparent;
   font-size: 14px;
   font-weight: 500;
+  color: var(--muted);
   transition: all 0.2s;
+  background: none;
+  border-radius: 0;
 }
 
 .client-tab.active {
-  background: var(--ink);
-  color: var(--bg);
-  border-color: var(--ink);
+  color: var(--ink);
+  border-bottom-color: var(--ink);
+  background: none;
 }
 
 .client-tab:hover {
-  border-color: var(--ink);
+  color: var(--ink);
 }
 
 .client-content {
   display: grid;
-  grid-template-columns: 1.5fr 1fr;
+  grid-template-columns: 1fr 1.2fr;
   gap: 80px;
   align-items: start;
 }
