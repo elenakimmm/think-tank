@@ -101,8 +101,11 @@ const CLIENT_CASES = [
 ];
 
 const CLIENT_LOGOS = [
-  { name: 'WorkOnward', src: '/uploads/workonward.svg' },
   { name: 'AIMMO', src: '/uploads/aimmo.svg' },
+  { name: 'Organic Authority', src: '/uploads/organic-authority.svg' },
+  { name: 'A+ Nail School', src: '/uploads/aplus-nail-school.svg' },
+  { name: 'WhiteCap Institute', src: '/uploads/whitecap-institute.svg' },
+  { name: 'WorkOnward', src: '/uploads/workonward.svg' },
   { name: 'boreas', src: '/uploads/boreas.svg' },
   { name: 'HEIMPLANET', src: '/uploads/heimplanet.svg' },
   { name: 'ORU KAYAK', src: '/uploads/oru-kayak.svg' }
