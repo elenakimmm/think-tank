@@ -1,10 +1,5 @@
-<svg viewBox="0 0 350 150" xmlns="http://www.w3.org/2000/svg">
-  <!-- ORU text -->
-  <text x="20" y="85" font-family="Arial, sans-serif" font-size="48" font-weight="500" fill="#000">ORU</text>
-  
-  <!-- Vertical line -->
-  <line x1="110" y1="30" x2="110" y2="110" stroke="#000" stroke-width="3"/>
-  
-  <!-- KAYAK text -->
-  <text x="130" y="85" font-family="Arial, sans-serif" font-size="48" font-weight="500" fill="#000">KAYAK</text>
+<svg width="180" height="100" viewBox="0 0 180 100" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="50" font-family="Arial" font-size="24" font-weight="500" fill="#000">ORU</text>
+  <line x1="75" y1="20" x2="75" y2="70" stroke="#000" stroke-width="2"/>
+  <text x="90" y="50" font-family="Arial" font-size="24" font-weight="500" fill="#000">KAYAK</text>
 </svg>

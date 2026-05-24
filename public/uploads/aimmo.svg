@@ -1,17 +1,7 @@
-<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <style>
-      .aimmo-text { font-family: Arial, sans-serif; font-size: 80px; font-weight: bold; fill: #000; }
-      .aimmo-dot { fill: #6D28D9; }
-    </style>
-  </defs>
-  
-  <!-- Purple dots -->
-  <circle cx="40" cy="60" r="14" class="aimmo-dot"/>
-  <circle cx="70" cy="85" r="12" class="aimmo-dot"/>
-  <circle cx="55" cy="110" r="16" class="aimmo-dot"/>
-  <circle cx="85" cy="100" r="13" class="aimmo-dot"/>
-  
-  <!-- Text -->
-  <text x="130" y="110" class="aimmo-text">AIMMO</text>
+<svg width="200" height="100" viewBox="0 0 200 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="25" cy="35" r="8" fill="#7C3AED"/>
+  <circle cx="45" cy="45" r="6" fill="#7C3AED"/>
+  <circle cx="35" cy="60" r="7" fill="#7C3AED"/>
+  <circle cx="55" cy="50" r="6" fill="#7C3AED"/>
+  <text x="75" y="55" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="#000">AIMMO</text>
 </svg>

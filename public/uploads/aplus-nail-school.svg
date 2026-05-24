@@ -1,9 +1,5 @@
-<svg viewBox="0 0 500 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Yellow circle with A+ -->
-  <circle cx="80" cy="80" r="70" fill="#FFD700"/>
-  <text x="60" y="105" font-family="Arial, sans-serif" font-size="70" font-weight="900" fill="#000">A+</text>
-  
-  <!-- Text -->
-  <text x="170" y="85" font-family="Arial, sans-serif" font-size="50" font-weight="900" fill="#000">NAIL SCHOOL</text>
-  <text x="170" y="130" font-family="Arial, sans-serif" font-size="16" font-weight="600" fill="#666" letter-spacing="2">POLISHED FOR SUCCESS</text>
+<svg width="280" height="100" viewBox="0 0 280 100" xmlns="http://www.w3.org/2000/svg">
+  <circle cx="40" cy="40" r="30" fill="#FFD700"/>
+  <text x="28" y="50" font-family="Arial" font-size="32" font-weight="900" fill="#000">A+</text>
+  <text x="85" y="50" font-family="Arial" font-size="24" font-weight="900" fill="#000">NAIL SCHOOL</text>
 </svg>

@@ -1,7 +1,4 @@
-<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Curved text "on" in orange -->
-  <text x="20" y="95" font-family="Georgia, serif" font-size="90" font-weight="bold" font-style="italic" fill="#FF6B35">on</text>
-  
-  <!-- Text below -->
-  <text x="20" y="160" font-family="Arial, sans-serif" font-size="22" font-weight="500" fill="#000" letter-spacing="3">ORGANIC AUTHORITY</text>
+<svg width="250" height="100" viewBox="0 0 250 100" xmlns="http://www.w3.org/2000/svg">
+  <text x="10" y="50" font-family="Georgia, serif" font-size="42" font-weight="bold" fill="#FF6B35" font-style="italic">on</text>
+  <text x="10" y="80" font-family="Arial" font-size="12" font-weight="600" fill="#000" letter-spacing="1">ORGANIC AUTHORITY</text>
 </svg>
