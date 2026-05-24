@@ -101,12 +101,11 @@ const CLIENT_CASES = [
 ];
 
 const CLIENT_LOGOS = [
-  { name: 'WorkOnward', src: '/uploads/workonward.png' },
-  { name: 'AIMMO', src: '/uploads/aimmo.png' },
-  { name: 'boreas', src: '/uploads/boreas.png' },
-  { name: 'HEIMPLANET', src: '/uploads/heimplanet.png' },
-  { name: 'ORU KAYAK', src: '/uploads/oru-kayak.png' },
-  { name: 'Organic Authority', src: '/uploads/organic-authority.png' }
+  { name: 'WorkOnward', src: '/uploads/workonward.svg' },
+  { name: 'AIMMO', src: '/uploads/aimmo.svg' },
+  { name: 'boreas', src: '/uploads/boreas.svg' },
+  { name: 'HEIMPLANET', src: '/uploads/heimplanet.svg' },
+  { name: 'ORU KAYAK', src: '/uploads/oru-kayak.svg' }
 ];
 
 function ClientScreenMock({ tone, headline, name, image }) {

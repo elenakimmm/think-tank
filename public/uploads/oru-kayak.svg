@@ -1,0 +1,8 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Text: ORU KAYAK -->
+  <text x="30" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="500" fill="#1a1a1a">ORU</text>
+  <text x="90" y="80" font-family="Arial, sans-serif" font-size="32" font-weight="500" fill="#1a1a1a">KAYAK</text>
+  
+  <!-- Vertical line between ORU and KAYAK -->
+  <line x1="85" y1="50" x2="85" y2="95" stroke="#1a1a1a" stroke-width="3"/>
+</svg>

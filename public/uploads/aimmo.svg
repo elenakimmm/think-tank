@@ -1,0 +1,8 @@
+<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Purple dots forming a pattern -->
+  <circle cx="60" cy="50" r="12" fill="#7C3AED"/>
+  <circle cx="90" cy="65" r="10" fill="#7C3AED"/>
+  <circle cx="75" cy="90" r="13" fill="#7C3AED"/>
+  <circle cx="100" cy="80" r="11" fill="#7C3AED"/>
+  <circle cx="110" cy="110" r="9" fill="#7C3AED"/>
+</svg>
