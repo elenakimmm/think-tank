@@ -1,8 +1,17 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <!-- Purple dots forming a pattern -->
-  <circle cx="60" cy="50" r="12" fill="#7C3AED"/>
-  <circle cx="90" cy="65" r="10" fill="#7C3AED"/>
-  <circle cx="75" cy="90" r="13" fill="#7C3AED"/>
-  <circle cx="100" cy="80" r="11" fill="#7C3AED"/>
-  <circle cx="110" cy="110" r="9" fill="#7C3AED"/>
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <style>
+      .aimmo-text { font-family: Arial, sans-serif; font-size: 80px; font-weight: bold; fill: #000; }
+      .aimmo-dot { fill: #6D28D9; }
+    </style>
+  </defs>
+  
+  <!-- Purple dots -->
+  <circle cx="40" cy="60" r="14" class="aimmo-dot"/>
+  <circle cx="70" cy="85" r="12" class="aimmo-dot"/>
+  <circle cx="55" cy="110" r="16" class="aimmo-dot"/>
+  <circle cx="85" cy="100" r="13" class="aimmo-dot"/>
+  
+  <!-- Text -->
+  <text x="130" y="110" class="aimmo-text">AIMMO</text>
 </svg>

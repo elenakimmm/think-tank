@@ -1,16 +1,12 @@
-<svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
-  <defs>
-    <linearGradient id="wGradient" x1="0%" y1="0%" x2="100%" y2="100%">
-      <stop offset="0%" style="stop-color:#7CB342;stop-opacity:1" />
-      <stop offset="50%" style="stop-color:#9CCC65;stop-opacity:1" />
-      <stop offset="100%" style="stop-color:#FF9800;stop-opacity:1" />
-    </linearGradient>
-  </defs>
-  <!-- Left V (Green) -->
-  <path d="M 50 30 L 80 120 L 65 120 L 45 50 Z" fill="#7CB342"/>
-  <path d="M 65 120 L 80 120 L 100 40 L 85 40 Z" fill="#9CCC65"/>
+<svg viewBox="0 0 300 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Left V in Green -->
+  <path d="M 30 40 L 70 140 L 50 140 L 25 60 Z" fill="#7CB342" stroke="none"/>
+  <path d="M 50 140 L 70 140 L 95 50 L 75 50 Z" fill="#9CCC65" stroke="none"/>
   
-  <!-- Right V (Orange) -->
-  <path d="M 115 30 L 145 120 L 130 120 L 110 50 Z" fill="#FF9800"/>
-  <path d="M 130 120 L 145 120 L 165 40 L 150 40 Z" fill="#FFA726"/>
+  <!-- Right V in Orange -->
+  <path d="M 105 40 L 145 140 L 125 140 L 100 60 Z" fill="#FF6B35" stroke="none"/>
+  <path d="M 125 140 L 145 140 L 170 50 L 150 50 Z" fill="#FFA500" stroke="none"/>
+  
+  <!-- Text: WorkOnward -->
+  <text x="30" y="180" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="#000">WorkOnward</text>
 </svg>

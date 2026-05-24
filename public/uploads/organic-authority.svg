@@ -1,7 +1,7 @@
-<svg viewBox="0 0 300 150" xmlns="http://www.w3.org/2000/svg">
-  <!-- Orange script "on" -->
-  <text x="20" y="80" font-family="cursive" font-size="72" font-weight="bold" fill="#FF6B35" font-style="italic">on</text>
+<svg viewBox="0 0 400 200" xmlns="http://www.w3.org/2000/svg">
+  <!-- Curved text "on" in orange -->
+  <text x="20" y="95" font-family="Georgia, serif" font-size="90" font-weight="bold" font-style="italic" fill="#FF6B35">on</text>
   
-  <!-- Text -->
-  <text x="20" y="130" font-family="Arial, sans-serif" font-size="20" font-weight="500" fill="#1a1a1a" letter-spacing="2">ORGANIC AUTHORITY</text>
+  <!-- Text below -->
+  <text x="20" y="160" font-family="Arial, sans-serif" font-size="22" font-weight="500" fill="#000" letter-spacing="3">ORGANIC AUTHORITY</text>
 </svg>
