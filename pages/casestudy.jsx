@@ -231,30 +231,45 @@ const CASE_STUDIES = {
     index: '06',
     name: 'ABS French School',
     title: <>ABS French<br />School.</>,
-    industry: 'Education',
+    industry: 'French Immersion Preschool',
     engagement: '14 months',
-    scope: 'Brand, web, SEO, CRM',
+    scope: 'Web, admissions, SEO, CRM',
     year: '2024 — 2025',
-    image: 'assets/clients/abs-screen.png',
+    website: 'https://absfrenchpreschool.com/',
+    image: 'assets/clients/abs-case-hero.jpg',
     tone: 'dark',
     intro: [
-      'ABS French School had a warm, trusted education experience, but its website and marketing systems did not communicate that quality clearly enough.',
-      'Think Tank rebuilt the digital foundation with brand improvements, a WordPress website, SEO content, email, paid acquisition, and HubSpot implementation.'
+      'Au Beau Séjour French Preschool is an Oakland French immersion preschool serving children ages 0 to 6 in a caring, safe environment. Its live site centers a 100% French immersion setting, whole-child learning, social emotional development, and the Éducation Nationale 2024 Program.',
+      'Think Tank shaped the digital experience around parent confidence and admissions intent: clearer program discovery, campus storytelling, schedule-a-tour pathways, application flow, curriculum proof, reviews, and CRM follow-up.'
     ],
-    resultsTitle: <>A better school story,<br />built to convert.</>,
-    resultsCopy: 'The engagement connected brand clarity with measurable acquisition and traffic growth.',
+    resultsTitle: <>Admissions clarity,<br />built for families.</>,
+    resultsCopy: 'The updated case study reflects the live ABS experience: French-speaking teachers, two Oakland campuses, daily gourmet meals, small classroom care, and a direct tour/application journey.',
     metrics: [
-      ['60', '%', 'Year-over-year growth'],
-      ['7', 'x', 'Traffic increase'],
-      ['CRM', '', 'HubSpot implementation for better lead management']
+      ['0–6', '', 'Age range served from nursery through kindergarten'],
+      ['100', '%', 'French immersion setting promoted by the school'],
+      ['2', '', 'Oakland campuses in Leona Heights and Hoover Foster']
     ],
-    problems: ['Outdated website', 'Never done marketing', 'School experience was stronger than the digital presence', 'Lead follow-up needed a clearer system'],
+    problems: [
+      'The school experience was warm and trusted, but parents needed faster proof of fit online',
+      'Programs, curriculum, campuses, tuition, schedule, tours, and applications needed clearer paths',
+      'The 100% French immersion promise and Éducation Nationale 2024 Program needed stronger placement',
+      'Parent reviews, staff credibility, meals, student life, and campus environment were not fully carrying the conversion story',
+      'Tour and application inquiries needed better capture, organization, and follow-up'
+    ],
     solutions: [
-      ['Brand and website', ['Branding improvements', 'WordPress website with SEO', 'Clearer admissions journey']],
-      ['Demand generation', ['SEO blog operation', 'Email marketing', 'Paid ads']],
-      ['CRM implementation', ['HubSpot setup', 'Lead capture and organization', 'Follow-up workflows']]
+      ['Parent-first positioning', ['Centered the story around global citizens, French immersion, and a caring Oakland environment', 'Clarified the whole-child philosophy and student life experience', 'Elevated French-speaking teachers, small classes, and daily gourmet meals']],
+      ['Admissions journey', ['Built direct paths for Schedule a Tour and Application actions', 'Organized programs, curriculum, tuition, schedule, and campus details for parent research', 'Reduced friction between first visit, trust-building, and inquiry']],
+      ['Campus and program storytelling', ['Showcased Mountain Campus in Leona Heights and West Campus in Hoover Foster', 'Used classroom, outdoor, meal, and student-life imagery to make the experience tangible', 'Connected nursery-to-kindergarten care with 100% French immersion']],
+      ['SEO and CRM system', ['Improved local education search structure around French preschool and Oakland families', 'Created clearer lead capture and organization for admissions inquiries', 'Supported follow-up workflows for tour and application interest']]
     ],
-    gallery: ['Preschool homepage system', 'Admissions journey', 'SEO content plan', 'Email nurture flow', 'HubSpot lead setup'],
+    gallery: [
+      { label: 'French immersion classroom experience', image: 'assets/clients/abs-case-hero.jpg', tone: 'dark' },
+      { label: 'Storytime and whole-child learning', image: 'assets/clients/abs-case-storytime.jpg', tone: 'sand' },
+      { label: 'Classroom play and social learning', image: 'assets/clients/abs-case-classroom.jpg', tone: 'light' },
+      { label: 'Outdoor gardening and student life', image: 'assets/clients/abs-case-garden.jpg', tone: 'lime' },
+      { label: 'Oakland campus environment', image: 'assets/clients/abs-case-campus.jpg', tone: 'light' },
+      { label: 'Daily gourmet meal program', image: 'assets/clients/abs-case-meals.jpg', tone: 'sand' }
+    ],
     nextId: 'aplus'
   }
 };
