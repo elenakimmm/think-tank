@@ -169,26 +169,6 @@ function Footer({ go }) {
           </ul>
         </div>
         <div>
-          <h5>Newsletter</h5>
-          <div style={{ display: 'flex', gap: 0, marginTop: 4 }}>
-            <input
-              type="email"
-              placeholder="Email"
-              style={{
-                flex: 1, border: '1px solid #eaeaea', borderRight: 0,
-                padding: '10px 12px', fontSize: 13, outline: 'none',
-                background: '#fafafa'
-              }} />
-            
-            <button style={{
-              background: '#111', color: '#fff',
-              padding: '10px 16px', fontSize: 13, fontWeight: 500
-            }}>
-              Subscribe
-            </button>
-          </div>
-        </div>
-        <div>
           <h5>Follow</h5>
           <ul>
             <li><a href="#">LinkedIn ↗</a></li>
