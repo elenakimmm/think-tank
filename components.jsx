@@ -116,7 +116,7 @@ function Nav({ route, go }) {
           {items.map((it) =>
           <button
             key={it.id}
-            className={route === it.id || it.id === 'works' && route === 'case' ? 'active' : ''}
+            className={route === it.id || it.id === 'works' && route.startsWith('case') ? 'active' : ''}
             onClick={() => go(it.id)}>
             
               {it.label}

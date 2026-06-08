@@ -1,30 +1,229 @@
 /* global React, Reveal, Placeholder */
 
-function CaseStudyPage({ go }) {
+const CASE_STUDIES = {
+  aplus: {
+    index: '01',
+    name: 'A+ Nail School',
+    title: <>A+ Nail<br />School.</>,
+    industry: 'Trade School & Education',
+    engagement: '24 months',
+    scope: 'Brand, web, CRM, paid',
+    year: '2023 — 2025',
+    image: null,
+    tone: 'warm',
+    intro: [
+      'A+ Nail School partnered with Think Tank Consulting during a period of digital growth and operational inefficiency. Despite offering strong training programs, their online presence and sales systems were not supporting their business potential.',
+      'Our team led a full transformation to modernize the brand, rebuild digital infrastructure, and establish a performance-driven marketing and sales engine.'
+    ],
+    resultsTitle: <>Two years.<br />Three transformations.</>,
+    resultsCopy: 'Quantitative outcomes from the engagement, measured against twelve-month baselines prior to launch.',
+    metrics: [
+      ['3', 'x', 'Revenue growth in two years'],
+      ['50', 'x', 'Increase in website traffic'],
+      ['13', 'x', 'Increase in monthly student sign-ups']
+    ],
+    problems: [
+      'Low online traffic — 300 visitors per month',
+      'Inefficient sign-ups — 22 per month',
+      'No established sales process',
+      'Outdated website lacking conversion structure',
+      'No proper marketing execution in place'
+    ],
+    solutions: [
+      ['Complete rebrand', ['Modernized visual identity and market positioning to match the quality of the training program itself.']],
+      ['Website redesign', ['Responsive design, mobile-first', 'SEO structure across information architecture', 'Conversion-focused landing pages', 'Organized content architecture']],
+      ['SEO strategy & paid acquisition', ['Long-term SEO roadmap', 'Paid campaigns across Meta & Google', 'Lead quality optimization with creative testing']],
+      ['HubSpot CRM & sales training', ['CRM implementation and migration', 'Lead automation and routing', 'Sales process training for the in-house team', 'Scalable pipeline setup']]
+    ],
+    gallery: ['Brand system — applied across collateral', 'Mobile signup flow', 'Identity mark — alts', 'Editorial type system', 'HubSpot dashboard config'],
+    nextId: 'hrhk'
+  },
+  hrhk: {
+    index: '02',
+    name: 'HRHK',
+    title: <>HRHK.</>,
+    industry: 'Non-Profit Organization',
+    engagement: '18 months',
+    scope: 'Web, SEO, content',
+    year: '2024 — 2025',
+    image: 'assets/clients/hrnk-screen.png',
+    tone: 'light',
+    intro: [
+      'HRHK needed a cleaner digital foundation for a high-stakes mission, with research, advocacy, and educational content that could be discovered and trusted by more people.',
+      'Think Tank rebuilt the site structure, migrated content into WordPress, and strengthened search visibility for a stronger awareness engine.'
+    ],
+    resultsTitle: <>Research made<br />easier to find.</>,
+    resultsCopy: 'The engagement focused on credibility, content access, and organic discovery across a large information archive.',
+    metrics: [
+      ['20', 'x', 'Traffic growth after migration and SEO implementation'],
+      ['UN', '', 'Awareness lift supporting United Nations speaking visibility'],
+      ['Wiki', '', 'Content authority strong enough to be referenced externally']
+    ],
+    problems: ['Outdated website', 'Existing contents lacked on-page SEO', 'Large archive was difficult to navigate', 'Advocacy content needed stronger discoverability'],
+    solutions: [
+      ['Website migration', ['Migrated the site to WordPress', 'Rebuilt navigation around research, advocacy, and news pathways', 'Improved publishing workflows']],
+      ['SEO implementation', ['Updated metadata and page structure', 'Optimized existing high-value content', 'Created stronger internal linking patterns']],
+      ['Content system', ['Organized evergreen resources', 'Clarified audience journeys', 'Prepared the archive for ongoing publication']]
+    ],
+    gallery: ['Research archive structure', 'Advocacy content templates', 'SEO content model', 'Navigation system', 'Publishing workflow'],
+    nextId: 'whitecap'
+  },
+  whitecap: {
+    index: '03',
+    name: 'WhiteCap',
+    title: <>WhiteCap<br />Institute.</>,
+    industry: 'Dental Education & E-commerce',
+    engagement: '16 months',
+    scope: 'Inbound, HubSpot, SEO',
+    year: '2024 — 2025',
+    image: 'assets/clients/whitecap-screen.png',
+    tone: 'sand',
+    intro: [
+      'WhiteCap Institute had strong expertise and education products, but its digital funnel was not converting attention into qualified demand.',
+      'We rebuilt the inbound system around clearer positioning, stronger website flows, and full-funnel campaign operations through HubSpot.'
+    ],
+    resultsTitle: <>Education demand,<br />built into a funnel.</>,
+    resultsCopy: 'The work connected paid, organic, email, SMS, and CRM activity into one operating system.',
+    metrics: [
+      ['3', '', 'Revenue channels connected across the funnel'],
+      ['1', '', 'Unified HubSpot operating system for marketing and sales'],
+      ['SEO', '', 'Improved site authority and organic lead quality']
+    ],
+    problems: ['B2B inbound funnel was weak', 'Website was outdated', 'Branding felt old', 'Organic leads were hard to generate and manage effectively'],
+    solutions: [
+      ['Inbound system', ['HubSpot implementation', 'Lead capture and nurturing flows', 'Audience segmentation']],
+      ['Full-funnel campaigns', ['Paid ads', 'Email marketing', 'SMS marketing', 'SEO blog operation']],
+      ['Website refresh', ['Updated conversion paths', 'Clarified education product pages', 'Improved content hierarchy']]
+    ],
+    gallery: ['Inbound funnel map', 'Course landing page system', 'HubSpot campaign flow', 'SEO blog structure', 'Lead nurture assets'],
+    nextId: 'icks'
+  },
+  icks: {
+    index: '04',
+    name: 'ICKS',
+    title: <>ICKS.</>,
+    industry: 'Non-Profit Organization',
+    engagement: '12 months',
+    scope: 'Brand, web, content',
+    year: '2024 — 2025',
+    image: null,
+    tone: 'light',
+    intro: [
+      'ICKS needed a digital presence that could explain its mission quickly, organize programs clearly, and support a wider community of stakeholders.',
+      'Think Tank shaped the website and content system around simple journeys for donors, partners, members, and first-time visitors.'
+    ],
+    resultsTitle: <>A clearer mission,<br />with cleaner paths.</>,
+    resultsCopy: 'The transformation focused on communication clarity, navigation, and a repeatable publishing structure.',
+    metrics: [
+      ['4', '', 'Audience pathways clarified across the site'],
+      ['1', '', 'Reusable content system for ongoing updates'],
+      ['3', '', 'Core program areas reorganized for faster comprehension']
+    ],
+    problems: ['Mission story was hard to scan quickly', 'Program pages lacked clear next steps', 'Content updates were manual and inconsistent', 'Stakeholder journeys were fragmented'],
+    solutions: [
+      ['Positioning structure', ['Clarified the core message', 'Organized content by audience need', 'Created a more focused nonprofit narrative']],
+      ['Website system', ['Reusable page modules', 'Simplified navigation', 'Mobile-first structure']],
+      ['Content operations', ['Repeatable program templates', 'Campaign-ready landing sections', 'Cleaner handoff for internal updates']]
+    ],
+    gallery: ['Mission page system', 'Program landing template', 'Donation journey', 'Partner content model', 'Campaign module set'],
+    nextId: 'hawaii'
+  },
+  hawaii: {
+    index: '05',
+    name: 'Hawaii',
+    title: <>Hawaii Elite<br />Chiropractic.</>,
+    industry: 'Healthcare Provider',
+    engagement: '20 months',
+    scope: 'Brand, web, SEO, paid',
+    year: '2023 — 2025',
+    image: 'assets/clients/hawaii-screen.png',
+    tone: 'lime',
+    intro: [
+      'Hawaii Elite Chiropractic needed a compliant growth system that could support clinic expansion while making patient acquisition easier to manage.',
+      'We rebuilt the brand and website, improved local search visibility, and connected campaign activity to sales and intake operations.'
+    ],
+    resultsTitle: <>Clinic growth,<br />with a cleaner system.</>,
+    resultsCopy: 'The work supported both brand trust and patient acquisition across two clinic locations.',
+    metrics: [
+      ['30', '%', 'Year-over-year revenue growth across both clinics'],
+      ['2', '', 'Clinics supported with a unified marketing system'],
+      ['CRM', '', 'Patient intake and follow-up process improved']
+    ],
+    problems: ['Website migration required', 'CRM implementation needed HIPAA-conscious workflows', 'Patient acquisition was difficult to track', 'Clinic growth needed stronger local visibility'],
+    solutions: [
+      ['Brand and website', ['Brand refresh', 'WordPress website redevelopment', 'Service pages optimized for conversion']],
+      ['Search and acquisition', ['SEO implementation', 'Paid ads', 'Local patient journey improvements']],
+      ['Sales training', ['CRM setup', 'Follow-up process support', 'Team training for patient inquiries']]
+    ],
+    gallery: ['Healthcare website system', 'Local SEO structure', 'Patient inquiry flow', 'Campaign landing pages', 'CRM intake process'],
+    nextId: 'abs'
+  },
+  abs: {
+    index: '06',
+    name: 'ABS French School',
+    title: <>ABS French<br />School.</>,
+    industry: 'Education',
+    engagement: '14 months',
+    scope: 'Brand, web, SEO, CRM',
+    year: '2024 — 2025',
+    image: 'assets/clients/abs-screen.png',
+    tone: 'dark',
+    intro: [
+      'ABS French School had a warm, trusted education experience, but its website and marketing systems did not communicate that quality clearly enough.',
+      'Think Tank rebuilt the digital foundation with brand improvements, a WordPress website, SEO content, email, paid acquisition, and HubSpot implementation.'
+    ],
+    resultsTitle: <>A better school story,<br />built to convert.</>,
+    resultsCopy: 'The engagement connected brand clarity with measurable acquisition and traffic growth.',
+    metrics: [
+      ['60', '%', 'Year-over-year growth'],
+      ['7', 'x', 'Traffic increase'],
+      ['CRM', '', 'HubSpot implementation for better lead management']
+    ],
+    problems: ['Outdated website', 'Never done marketing', 'School experience was stronger than the digital presence', 'Lead follow-up needed a clearer system'],
+    solutions: [
+      ['Brand and website', ['Branding improvements', 'WordPress website with SEO', 'Clearer admissions journey']],
+      ['Demand generation', ['SEO blog operation', 'Email marketing', 'Paid ads']],
+      ['CRM implementation', ['HubSpot setup', 'Lead capture and organization', 'Follow-up workflows']]
+    ],
+    gallery: ['Preschool homepage system', 'Admissions journey', 'SEO content plan', 'Email nurture flow', 'HubSpot lead setup'],
+    nextId: 'aplus'
+  }
+};
+
+function MetricValue({ value, suffix }) {
+  return (
+    <div className="big">
+      {value}{suffix ? <sup>{suffix}</sup> : null}
+    </div>
+  );
+}
+
+function CaseImage({ item }) {
+  if (item.image) {
+    return <img src={item.image} alt={`${item.name} case study`} />;
+  }
+
+  return <Placeholder label={`${item.name} — Hero image`} tone={item.tone} />;
+}
+
+function CaseStudyPage({ go, caseId = 'aplus' }) {
+  const item = CASE_STUDIES[caseId] || CASE_STUDIES.aplus;
+  const next = CASE_STUDIES[item.nextId] || CASE_STUDIES.aplus;
+
   return (
     <div className="page-enter">
       <section className="page page-hero">
         <div style={{ display: 'flex', gap: 24, alignItems: 'center', flexWrap: 'wrap' }}>
-          <div className="label">Case Study — 01</div>
+          <div className="label">Case Study — {item.index}</div>
           <div style={{ width: 60, height: 1, background: '#eaeaea' }}></div>
-          <div className="label" style={{ color: '#111' }}>A+ Nail School</div>
+          <div className="label" style={{ color: '#111' }}>{item.name}</div>
         </div>
-        <h1 style={{ marginTop: 30 }}>
-          A+ Nail<br />School.
-        </h1>
+        <h1 style={{ marginTop: 30 }}>{item.title}</h1>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, marginTop: 60, maxWidth: 1300 }}
              className="cs-intro">
-          <p className="sub" style={{ margin: 0 }}>
-            A+ Nail School partnered with Think Tank Consulting during a period
-            of digital growth and operational inefficiency. Despite offering
-            strong training programs, their online presence and sales systems
-            were not supporting their business potential.
-          </p>
-          <p className="sub" style={{ margin: 0 }}>
-            Our team led a full transformation to modernize the brand, rebuild
-            digital infrastructure, and establish a performance-driven
-            marketing and sales engine.
-          </p>
+          {item.intro.map((copy, i) =>
+            <p className="sub" style={{ margin: 0 }} key={i}>{copy}</p>
+          )}
         </div>
         <div style={{ marginTop: 50 }}>
           <button className="btn btn-primary">
@@ -33,66 +232,54 @@ function CaseStudyPage({ go }) {
         </div>
       </section>
 
-      {/* Meta strip */}
       <section className="page" style={{ paddingBottom: 0 }}>
         <div className="cs-meta">
           <div className="cs-meta-cell">
             <div className="label">Industry</div>
-            <div className="val">Trade School & Education</div>
+            <div className="val">{item.industry}</div>
           </div>
           <div className="cs-meta-cell">
             <div className="label">Engagement</div>
-            <div className="val">24 months</div>
+            <div className="val">{item.engagement}</div>
           </div>
           <div className="cs-meta-cell">
             <div className="label">Scope</div>
-            <div className="val">Brand, web, CRM, paid</div>
+            <div className="val">{item.scope}</div>
           </div>
           <div className="cs-meta-cell">
             <div className="label">Year</div>
-            <div className="val">2023 — 2025</div>
+            <div className="val">{item.year}</div>
           </div>
         </div>
 
         <Reveal>
           <div className="cs-hero-img">
-            <Placeholder label="A+ Nail School — Hero image" tone="warm" />
+            <CaseImage item={item} />
           </div>
         </Reveal>
       </section>
 
-      {/* Results */}
       <section className="page section">
         <Reveal>
           <div className="section-head">
             <div>
               <div className="label">Results</div>
-              <h2 style={{ marginTop: 22 }}>Two years.<br />Three transformations.</h2>
+              <h2 style={{ marginTop: 22 }}>{item.resultsTitle}</h2>
             </div>
-            <p className="right">
-              Quantitative outcomes from the engagement, measured against
-              twelve-month baselines prior to launch.
-            </p>
+            <p className="right">{item.resultsCopy}</p>
           </div>
         </Reveal>
 
         <div className="metrics">
-          <Reveal className="metric">
-            <div className="big">3<sup>x</sup></div>
-            <p>Revenue growth in two years</p>
-          </Reveal>
-          <Reveal delay={120} className="metric">
-            <div className="big">50<sup>x</sup></div>
-            <p>Increase in website traffic</p>
-          </Reveal>
-          <Reveal delay={240} className="metric">
-            <div className="big">13<sup>x</sup></div>
-            <p>Increase in monthly student sign-ups</p>
-          </Reveal>
+          {item.metrics.map(([value, suffix, copy], i) =>
+            <Reveal className="metric" delay={i * 120} key={`${value}-${copy}`}>
+              <MetricValue value={value} suffix={suffix} />
+              <p>{copy}</p>
+            </Reveal>
+          )}
         </div>
       </section>
 
-      {/* Problems */}
       <section className="page section">
         <div className="problems-grid">
           <Reveal>
@@ -105,17 +292,14 @@ function CaseStudyPage({ go }) {
           </Reveal>
           <Reveal delay={120}>
             <ul className="problems-list">
-              <li><span className="pn">01</span>Low online traffic — 300 visitors per month</li>
-              <li><span className="pn">02</span>Inefficient sign-ups — 22 per month</li>
-              <li><span className="pn">03</span>No established sales process</li>
-              <li><span className="pn">04</span>Outdated website lacking conversion structure</li>
-              <li><span className="pn">05</span>No proper marketing execution in place</li>
+              {item.problems.map((problem, i) =>
+                <li key={problem}><span className="pn">{String(i + 1).padStart(2, '0')}</span>{problem}</li>
+              )}
             </ul>
           </Reveal>
         </div>
       </section>
 
-      {/* Solutions */}
       <section className="page section">
         <Reveal>
           <div className="section-head">
@@ -127,52 +311,18 @@ function CaseStudyPage({ go }) {
         </Reveal>
 
         <div>
-          <Reveal className="solution">
-            <div className="sn">01</div>
-            <h4>Complete rebrand</h4>
-            <div>
-              <p style={{ color: '#444', fontSize: 15, lineHeight: 1.5 }}>
-                Modernized visual identity and market positioning to match the
-                quality of the training program itself.
-              </p>
-            </div>
-          </Reveal>
-
-          <Reveal delay={80} className="solution">
-            <div className="sn">02</div>
-            <h4>Website redesign</h4>
-            <ul>
-              <li>Responsive design, mobile-first</li>
-              <li>SEO structure across information architecture</li>
-              <li>Conversion-focused landing pages</li>
-              <li>Organized content architecture</li>
-            </ul>
-          </Reveal>
-
-          <Reveal delay={160} className="solution">
-            <div className="sn">03</div>
-            <h4>SEO strategy & paid acquisition</h4>
-            <ul>
-              <li>Long-term SEO roadmap</li>
-              <li>Paid campaigns across Meta & Google</li>
-              <li>Lead quality optimization with creative testing</li>
-            </ul>
-          </Reveal>
-
-          <Reveal delay={240} className="solution">
-            <div className="sn">04</div>
-            <h4>HubSpot CRM & sales training</h4>
-            <ul>
-              <li>CRM implementation and migration</li>
-              <li>Lead automation and routing</li>
-              <li>Sales process training for the in-house team</li>
-              <li>Scalable pipeline setup</li>
-            </ul>
-          </Reveal>
+          {item.solutions.map(([title, points], i) =>
+            <Reveal delay={i * 80} className="solution" key={title}>
+              <div className="sn">{String(i + 1).padStart(2, '0')}</div>
+              <h4>{title}</h4>
+              <ul>
+                {points.map((point) => <li key={point}>{point}</li>)}
+              </ul>
+            </Reveal>
+          )}
         </div>
       </section>
 
-      {/* Gallery */}
       <section className="page section">
         <Reveal>
           <div className="section-head">
@@ -184,44 +334,38 @@ function CaseStudyPage({ go }) {
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 24 }}>
           <Reveal>
             <div style={{ aspectRatio: '16/10' }}>
-              <Placeholder label="Brand system — applied across collateral" tone="warm" />
+              <Placeholder label={item.gallery[0]} tone={item.tone} />
             </div>
           </Reveal>
           <Reveal delay={80}>
             <div style={{ aspectRatio: '4/5' }}>
-              <Placeholder label="Mobile signup flow" tone="sand" />
+              <Placeholder label={item.gallery[1]} tone="sand" />
             </div>
           </Reveal>
         </div>
         <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 24 }}>
-          <Reveal>
-            <div style={{ aspectRatio: '1/1' }}>
-              <Placeholder label="Identity mark — alts" tone="dark" />
-            </div>
-          </Reveal>
-          <Reveal delay={80}>
-            <div style={{ aspectRatio: '1/1' }}>
-              <Placeholder label="Editorial type system" tone="light" />
-            </div>
-          </Reveal>
-          <Reveal delay={160}>
-            <div style={{ aspectRatio: '1/1' }}>
-              <Placeholder label="HubSpot dashboard config" tone="lime" />
-            </div>
-          </Reveal>
+          {item.gallery.slice(2).map((label, i) =>
+            <Reveal delay={i * 80} key={label}>
+              <div style={{ aspectRatio: '1/1' }}>
+                <Placeholder label={label} tone={['dark', 'light', 'lime'][i] || 'light'} />
+              </div>
+            </Reveal>
+          )}
         </div>
       </section>
 
-      {/* Next */}
       <section className="page section">
         <Reveal>
           <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 24 }}>
             <div>
               <div className="label">Next case</div>
               <h2 style={{ fontSize: 'clamp(48px, 7vw, 96px)', fontWeight: 700, letterSpacing: '-0.035em', marginTop: 20 }}>
-                Whitecap →
+                {next.name} →
               </h2>
             </div>
+            <button className="btn btn-ghost" onClick={() => go(`case:${item.nextId}`)}>
+              Next case <span className="arrow">→</span>
+            </button>
             <button className="btn btn-ghost" onClick={() => go('works')}>
               All works <span className="arrow">→</span>
             </button>

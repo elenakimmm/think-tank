@@ -22,7 +22,7 @@ function WorksPage({ go }) {
             delay={i * 60}
             className="card"
             as="a"
-            onClick={(e) => {e.preventDefault();if (p.id === 'aplus') go('case');}}>
+            onClick={(e) => {e.preventDefault();go(`case:${p.id}`);}}>
             
               <div className="card-media" style={{ aspectRatio: i % 3 === 1 ? '4/5' : '5/4' }}>
                 <Placeholder label={p.name} tone={p.tone} />

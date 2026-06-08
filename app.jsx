@@ -19,13 +19,15 @@ function App() {
     }, 220);
   };
 
+  const caseId = route.startsWith('case:') ? route.slice(5) : 'aplus';
+
   let Page;
   switch (route) {
     case 'works':   Page = WorksPage;     break;
-    case 'case':    Page = CaseStudyPage; break;
     case 'about':   Page = AboutPage;     break;
     case 'contact': Page = ContactPage;   break;
-    default:        Page = LandingPage;
+    default:
+      Page = route.startsWith('case') ? CaseStudyPage : LandingPage;
   }
 
   return (
@@ -37,7 +39,7 @@ function App() {
           transition: 'opacity 0.22s ease',
         }}
       >
-        <Page go={go} />
+        <Page go={go} caseId={caseId} />
         <Footer go={go} />
       </main>
     </React.Fragment>
