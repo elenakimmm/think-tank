@@ -7,35 +7,43 @@ const CASE_STUDIES = {
     title: <>A+ Nail<br />School.</>,
     industry: 'Trade School & Education',
     engagement: '24 months',
-    scope: 'Brand, web, CRM, paid',
+    scope: 'Web, SEO, paid, CRM',
     year: '2023 — 2025',
-    image: null,
+    website: 'https://aplusnailschool.com/',
+    image: 'assets/clients/aplus-case-school.png',
     tone: 'warm',
     intro: [
-      'A+ Nail School partnered with Think Tank Consulting during a period of digital growth and operational inefficiency. Despite offering strong training programs, their online presence and sales systems were not supporting their business potential.',
-      'Our team led a full transformation to modernize the brand, rebuild digital infrastructure, and establish a performance-driven marketing and sales engine.'
+      'A+ Nail School is a Chicagoland nail technician school built around a clear promise: polished for success. The school offers flexible enrollment, a 350-hour nail tech curriculum, student aid options, and business training for future salon professionals.',
+      'Think Tank rebuilt the digital growth system around that offer: clearer positioning, a conversion-focused website, SEO content, paid acquisition, and CRM workflows that made student interest easier to capture and follow up.'
     ],
-    resultsTitle: <>Two years.<br />Three transformations.</>,
-    resultsCopy: 'Quantitative outcomes from the engagement, measured against twelve-month baselines prior to launch.',
+    resultsTitle: <>A stronger school story,<br />built to enroll.</>,
+    resultsCopy: 'The case study now reflects the live A+ offer: flexible training, career support, certification advantages, and measurable demand growth.',
     metrics: [
-      ['3', 'x', 'Revenue growth in two years'],
-      ['50', 'x', 'Increase in website traffic'],
-      ['13', 'x', 'Increase in monthly student sign-ups']
+      ['2', 'K+', 'Graduates highlighted by the school'],
+      ['95', '%', 'Pass license test rate promoted on the site'],
+      ['350', 'hr', 'Hands-on curriculum to become a licensed nail tech']
     ],
     problems: [
-      'Low online traffic — 300 visitors per month',
-      'Inefficient sign-ups — 22 per month',
-      'No established sales process',
-      'Outdated website lacking conversion structure',
-      'No proper marketing execution in place'
+      'The school had a strong offline reputation but needed a clearer digital enrollment journey',
+      'Course value was spread across multiple sections instead of being packaged as one compelling offer',
+      'Career days, workshops, and salon connections were not doing enough work in the conversion story',
+      'The Après Gel-X certification advantage needed stronger placement',
+      'Student inquiries needed better capture, nurturing, and follow-up structure'
     ],
     solutions: [
-      ['Complete rebrand', ['Modernized visual identity and market positioning to match the quality of the training program itself.']],
-      ['Website redesign', ['Responsive design, mobile-first', 'SEO structure across information architecture', 'Conversion-focused landing pages', 'Organized content architecture']],
-      ['SEO strategy & paid acquisition', ['Long-term SEO roadmap', 'Paid campaigns across Meta & Google', 'Lead quality optimization with creative testing']],
-      ['HubSpot CRM & sales training', ['CRM implementation and migration', 'Lead automation and routing', 'Sales process training for the in-house team', 'Scalable pipeline setup']]
+      ['Offer positioning', ['Centered the story around “Your Nail Tech Journey Starts Here”', 'Clarified flexible enrollment, payment support, and included student materials', 'Elevated career outcomes and business-skill development']],
+      ['Website and conversion system', ['Rebuilt the site around course discovery and tour requests', 'Created clearer calls to action for getting started and scheduling a tour', 'Organized the experience for mobile-first student research']],
+      ['SEO and content strategy', ['Built keyword pathways around nail tech licensing and career education', 'Supported blog content for students researching nail careers', 'Connected course, FAQ, and state requirement content into a stronger search structure']],
+      ['CRM and acquisition', ['Improved lead capture for tour and information requests', 'Supported paid acquisition campaigns', 'Created follow-up structure for prospective students']],
+      ['Events and credibility', ['Highlighted career days with salon-owner connections', 'Promoted exclusive workshops and continuing education', 'Strengthened the Après Gel-X certification advantage']]
     ],
-    gallery: ['Brand system — applied across collateral', 'Mobile signup flow', 'Identity mark — alts', 'Editorial type system', 'HubSpot dashboard config'],
+    gallery: [
+      { label: 'A+ homepage and enrollment experience', image: 'assets/clients/aplus-case-school.png', tone: 'warm' },
+      { label: 'Student training and school environment', image: 'assets/clients/aplus-case-hero.jpeg', tone: 'sand' },
+      { label: 'Après Gel-X certification module', image: 'assets/clients/aplus-case-gelx.png', tone: 'dark' },
+      { label: 'Acrylic course module', image: 'assets/clients/aplus-case-acrylic.png', tone: 'light' },
+      { label: 'Workshops and career days', image: 'assets/clients/aplus-case-events.jpeg', tone: 'lime' }
+    ],
     nextId: 'hrhk'
   },
   hrhk: {
@@ -206,6 +214,16 @@ function CaseImage({ item }) {
   return <Placeholder label={`${item.name} — Hero image`} tone={item.tone} />;
 }
 
+function GalleryTile({ tile, fallbackTone }) {
+  const data = typeof tile === 'string' ? { label: tile, tone: fallbackTone } : tile;
+
+  if (data.image) {
+    return <img src={data.image} alt={data.label} />;
+  }
+
+  return <Placeholder label={data.label} tone={data.tone || fallbackTone} />;
+}
+
 function CaseStudyPage({ go, caseId = 'aplus' }) {
   const item = CASE_STUDIES[caseId] || CASE_STUDIES.aplus;
   const next = CASE_STUDIES[item.nextId] || CASE_STUDIES.aplus;
@@ -226,9 +244,14 @@ function CaseStudyPage({ go, caseId = 'aplus' }) {
           )}
         </div>
         <div style={{ marginTop: 50 }}>
-          <button className="btn btn-primary">
-            View website <span className="arrow">↗</span>
-          </button>
+          {item.website ?
+            <a className="btn btn-primary" href={item.website} target="_blank" rel="noreferrer">
+              View website <span className="arrow">↗</span>
+            </a> :
+            <button className="btn btn-primary">
+              View website <span className="arrow">↗</span>
+            </button>
+          }
         </div>
       </section>
 
@@ -333,21 +356,21 @@ function CaseStudyPage({ go, caseId = 'aplus' }) {
         </Reveal>
         <div style={{ display: 'grid', gridTemplateColumns: '2fr 1fr', gap: 24 }}>
           <Reveal>
-            <div style={{ aspectRatio: '16/10' }}>
-              <Placeholder label={item.gallery[0]} tone={item.tone} />
+            <div className="cs-gallery-tile" style={{ aspectRatio: '16/10' }}>
+              <GalleryTile tile={item.gallery[0]} fallbackTone={item.tone} />
             </div>
           </Reveal>
           <Reveal delay={80}>
-            <div style={{ aspectRatio: '4/5' }}>
-              <Placeholder label={item.gallery[1]} tone="sand" />
+            <div className="cs-gallery-tile" style={{ aspectRatio: '4/5' }}>
+              <GalleryTile tile={item.gallery[1]} fallbackTone="sand" />
             </div>
           </Reveal>
         </div>
         <div style={{ marginTop: 24, display: 'grid', gridTemplateColumns: '1fr 1fr 1fr', gap: 24 }}>
-          {item.gallery.slice(2).map((label, i) =>
-            <Reveal delay={i * 80} key={label}>
-              <div style={{ aspectRatio: '1/1' }}>
-                <Placeholder label={label} tone={['dark', 'light', 'lime'][i] || 'light'} />
+          {item.gallery.slice(2).map((tile, i) =>
+            <Reveal delay={i * 80} key={typeof tile === 'string' ? tile : tile.label}>
+              <div className="cs-gallery-tile" style={{ aspectRatio: '1/1' }}>
+                <GalleryTile tile={tile} fallbackTone={['dark', 'light', 'lime'][i] || 'light'} />
               </div>
             </Reveal>
           )}
