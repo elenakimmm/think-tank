@@ -33,6 +33,7 @@ const CLIENT_CASES = [
   name: 'ABS French School',
   cat: 'Education',
   tone: 'lime',
+  website: 'https://absfrenchpreschool.com/',
   image: 'assets/clients/abs-screen.png',
   headline: 'Au Beau Séjour — French Preschool',
   problems: [
@@ -54,6 +55,7 @@ const CLIENT_CASES = [
   name: 'WhiteCap Institute',
   cat: 'Dental Education & E-commerce',
   tone: 'sand',
+  website: 'https://whitecapinstitute.com/',
   image: 'assets/clients/whitecap-screen.png',
   headline: 'Premier Dental Implant Training',
   problems: [
@@ -77,6 +79,7 @@ const CLIENT_CASES = [
   name: 'A+ Nail School',
   cat: 'Trade School & Education',
   tone: 'dark',
+  website: 'https://aplusnailschool.com/',
   image: 'assets/clients/aplus-screen.png',
   headline: 'Polished for Success — Your Nail Tech Journey',
   problems: ['Outdated website', 'No structured marketing activities'],
@@ -98,6 +101,7 @@ const CLIENT_CASES = [
   name: 'HRNK',
   cat: 'Non-Profit Organization',
   tone: 'light',
+  website: 'https://www.hrnk.org/',
   image: 'assets/clients/hrnk-screen.png',
   headline: 'Support Human Rights in North Korea',
   problems: ['Outdated website', 'Existing contents lacked on-page SEO'],
@@ -117,6 +121,7 @@ const CLIENT_CASES = [
   name: 'Organic Authority',
   cat: 'Media',
   tone: 'lime',
+  website: 'https://www.organicauthority.com/',
   image: 'assets/clients/organic-screen.png',
   headline: 'The Better Food, Health & Wellness Authority',
   problems: [],
@@ -138,6 +143,7 @@ const CLIENT_CASES = [
   name: 'Hawaii Elite Chiropractic',
   cat: 'Healthcare Provider',
   tone: 'warm',
+  website: 'https://hawaiielitechiropractic.com/',
   image: 'assets/clients/hawaii-screen.png',
   headline: 'Where Healing Meets Aloha',
   problems: ['Website migration required', 'CRM implementation with HIPAA compliance needed'],
@@ -153,6 +159,7 @@ const CLIENT_CASES = [
   name: 'Straight Talk Advisor',
   cat: 'Executive Advisory & Consulting',
   tone: 'sand',
+  website: 'https://straighttalkadvisory.com/',
   image: 'assets/clients/sta-case-hero.jpg',
   headline: 'Executive coaching with proven playbooks',
   problems: ['New advisory brand needed immediate executive trust', 'Offer needed to speak clearly to consumer-product CEOs and COOs'],
@@ -346,7 +353,7 @@ function LandingPage({ go }) {
           <div className="client-detail">
             <div className="cat">{client.cat}</div>
             <h3>{client.name}</h3>
-            <a className="visit" href="#" onClick={(e) => e.preventDefault()}>
+            <a className="visit" href={client.website} target="_blank" rel="noopener noreferrer">
               Visit website <span>↗</span>
             </a>
 
