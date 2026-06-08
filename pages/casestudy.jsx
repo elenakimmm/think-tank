@@ -270,6 +270,51 @@ const CASE_STUDIES = {
       { label: 'Oakland campus environment', image: 'assets/clients/abs-case-campus.jpg', tone: 'light' },
       { label: 'Daily gourmet meal program', image: 'assets/clients/abs-case-meals.jpg', tone: 'sand' }
     ],
+    nextId: 'sta'
+  },
+  sta: {
+    index: '07',
+    name: 'Straight Talk Advisor',
+    title: <>Straight Talk<br />Advisor.</>,
+    industry: 'Executive Advisory & Consulting',
+    engagement: 'Launch phase',
+    scope: 'Brand, web, advisory funnel',
+    year: '2026',
+    website: 'https://straighttalkadvisory.com/',
+    image: 'assets/clients/sta-case-hero.jpg',
+    tone: 'sand',
+    intro: [
+      'Straight Talk Advisory is a high-impact advisory offer for founders, executives, and scaling startups. The site positions Ardy Sobhani as a hands-on mentor for consumer-product CEOs and COOs who need to increase revenue, cut costs, and scale sustainably.',
+      'Think Tank shaped the digital experience around direct executive trust: a clear waitlist funnel, founder credibility from Oru Kayak, operational playbooks, fractional CEO/COO advisory, workshops, and strategic growth systems.'
+    ],
+    resultsTitle: <>Executive clarity,<br />built to scale.</>,
+    resultsCopy: 'The case study reflects the live Straight Talk offer: hands-on mentorship, proven consumer-product playbooks, Idea-to-IPO experience, operational systems, and a direct path to book a call or join the waitlist.',
+    metrics: [
+      ['15', '+', 'Years of consumer-product operating experience referenced on the site'],
+      ['120', 'M', 'Revenue scale highlighted through the Oru Kayak growth story'],
+      ['20', '%', 'Profitability benchmark promoted in the operating narrative']
+    ],
+    problems: [
+      'A newly launched advisory brand needed to establish executive credibility quickly',
+      'The offer had to explain who it serves: founders, CEOs, COOs, and scaling consumer-product teams',
+      'Ardy Sobhani’s Oru Kayak experience needed to become a clear proof system, not just a biography',
+      'Services across strategy, operations, pricing, manufacturing, partnerships, and workshops needed one coherent funnel',
+      'Book-a-call and waitlist actions needed direct placement without overcomplicating the page'
+    ],
+    solutions: [
+      ['Credibility-led positioning', ['Centered the promise around trusted executive coaching and proven playbooks', 'Connected Ardy Sobhani’s Oru Kayak operating background to founder trust', 'Clarified the customer: consumer-product CEO and COO teams']],
+      ['Offer architecture', ['Organized advisory support around fractional COO/CEO work, growth strategy, operational systems, and market leadership', 'Turned service areas into practical business outcomes', 'Created a sharper bridge from pain points to advisory fit']],
+      ['Conversion path', ['Simplified action into Book a call and Sign up for the Waitlist', 'Made the form ask for business URL, revenue, email, operating stage, and support needs', 'Reduced the page to a direct executive decision journey']],
+      ['Proof and content system', ['Elevated Idea-to-IPO and manufacturing-scale experience', 'Highlighted revenue, profitability, and strategic alliance proof points', 'Used workshops and playbooks as repeatable productized advisory assets']]
+    ],
+    gallery: [
+      { label: 'Executive advisory hero experience', image: 'assets/clients/sta-case-hero.jpg', tone: 'sand' },
+      { label: 'Straight Talk Advisory identity', image: 'assets/clients/sta-case-logo.png', tone: 'light' },
+      { label: 'Consumer-product operating playbook', image: 'assets/clients/sta-case-business.jpeg', tone: 'dark' },
+      { label: 'Proven playbooks and mentorship', image: 'assets/clients/sta-case-playbook.png', tone: 'lime' },
+      { label: 'Services and advisory structure', image: 'assets/clients/sta-case-services.jpg', tone: 'light' },
+      { label: 'Growth and scale proof system', image: 'assets/clients/sta-case-growth.jpg', tone: 'sand' }
+    ],
     nextId: 'aplus'
   }
 };

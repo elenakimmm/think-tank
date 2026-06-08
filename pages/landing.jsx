@@ -151,13 +151,13 @@ const CLIENT_CASES = [
 {
   id: 'sta',
   name: 'Straight Talk Advisor',
-  cat: 'Consulting Service',
+  cat: 'Executive Advisory & Consulting',
   tone: 'sand',
-  image: 'assets/clients/sta-screen.png',
-  headline: 'Your trusted executive coach with proven playbooks',
-  problems: ['Newly established company', 'Needed end-to-end launch support'],
-  solutions: ['Branding', 'WordPress website', 'SEO', 'Blog strategy', 'Email marketing', 'Paid ads'],
-  results: ['WIP (Work in Progress)']
+  image: 'assets/clients/sta-case-hero.jpg',
+  headline: 'Executive coaching with proven playbooks',
+  problems: ['New advisory brand needed immediate executive trust', 'Offer needed to speak clearly to consumer-product CEOs and COOs'],
+  solutions: ['Positioning around hands-on mentorship', 'Waitlist and book-a-call funnel', 'Service architecture for strategy, operations, manufacturing, and workshops'],
+  results: ['15+ years operator credibility', '$120M revenue scale story', '20% profit benchmark']
 }];
 
 
@@ -504,7 +504,8 @@ window.PROJECTS = window.PROJECTS || [
 { id: 'whitecap', name: 'Whitecap', cat: 'Dental Education & E-commerce', tone: 'sand' },
 { id: 'icks', name: 'ICKS', cat: 'Non-Profit Organization', tone: 'light' },
 { id: 'hawaii', name: 'Hawaii', cat: 'Healthcare Provider', tone: 'lime' },
-{ id: 'abs', name: 'ABS French School', cat: 'Education', tone: 'dark' }];
+{ id: 'abs', name: 'ABS French School', cat: 'Education', tone: 'dark' },
+{ id: 'sta', name: 'Straight Talk Advisor', cat: 'Executive Advisory & Consulting', tone: 'sand' }];
 
 window.PROCESS = window.PROCESS || [
 { n: '01', t: 'Brand Positioning & Development' },
