@@ -3,14 +3,16 @@
 const { useState, useEffect } = React;
 
 function App() {
-  const [route, setRoute] = useState('home');
+  const getRouteFromLocation = () => {
+    const params = new URLSearchParams(window.location.search);
+    return params.get('route') || window.location.hash.replace(/^#/, '') || 'home';
+  };
+  const getRouteUrl = (next) => next === 'home' ? window.location.pathname : `${window.location.pathname}?route=${encodeURIComponent(next)}`;
+
+  const [route, setRoute] = useState(getRouteFromLocation);
   const [transitioning, setTransitioning] = useState(false);
 
-  const go = (next) => {
-    if (next === route) {
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      return;
-    }
+  const renderRoute = (next) => {
     setTransitioning(true);
     setTimeout(() => {
       setRoute(next);
@@ -18,6 +20,28 @@ function App() {
       setTransitioning(false);
     }, 220);
   };
+
+  const changeRoute = (next, pushHistory = true) => {
+    if (next === route) {
+      window.scrollTo({ top: 0, behavior: 'smooth' });
+      return;
+    }
+    if (pushHistory) {
+      window.location.assign(getRouteUrl(next));
+      return;
+    }
+    renderRoute(next);
+  };
+
+  useEffect(() => {
+    const handleHashChange = () => {
+      renderRoute(getRouteFromLocation());
+    };
+    window.addEventListener('hashchange', handleHashChange);
+    return () => window.removeEventListener('hashchange', handleHashChange);
+  }, []);
+
+  const go = (next) => changeRoute(next, true);
 
   const caseId = route.startsWith('case:') ? route.slice(5) : 'aplus';
 
