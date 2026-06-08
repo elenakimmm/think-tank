@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Kinetic Hero — Marketing Agency for scaling business.</title>
+  <style>
+    html, body {
+      margin: 0; padding: 0;
+      width: 100%; height: 100%;
+      background: #ffffff;
+      font-family: Helvetica, "Helvetica Neue", Arial, sans-serif;
+      overflow: hidden;
+    }
+    #root { width: 100vw; height: 100vh; position: relative; }
+    /* Override Stage's black letterbox to match site (white) */
+    #root > div { background: #ffffff !important; }
+    /* Remove canvas drop-shadow so no gray haze appears around the embed */
+    #root > div > div > div { box-shadow: none !important; }
+  </style>
+</head>
+<body>
+  <div id="root"></div>
+
+  <script src="https://unpkg.com/react@18.3.1/umd/react.development.js" integrity="sha384-hD6/rw4ppMLGNu3tX5cjIb+uRZ7UkRJ6BPkLpg4hAu/6onKUg4lLsHAs9EBPT82L" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/react-dom@18.3.1/umd/react-dom.development.js" integrity="sha384-u6aeetuaXnQ38mYT8rp6sbXaQe3NL9t+IBXmnYxwkUI2Hw4bsp2Wvmx4yRQF1uAm" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/@babel/standalone@7.29.0/babel.min.js" integrity="sha384-m08KidiNqLdpJqLq95G/LEi8Qvjl/xUYll3QILypMoQ65QorJ9Lvtp2RXYGBFj1y" crossorigin="anonymous"></script>
+
+  <script type="text/babel" src="animations.jsx"></script>
+  <script type="text/babel" src="kinetic.jsx"></script>
+
+  <script type="text/babel">
+    const root = ReactDOM.createRoot(document.getElementById('root'));
+    root.render(
+      <Stage
+        width={1920}
+        height={1080}
+        duration={7}
+        background="#ffffff"
+        showControls={false}
+        persistKey="kinetic-hero-v3"
+      >
+        <KineticHero />
+      </Stage>
+    );
+  </script>
+</body>
+</html>
