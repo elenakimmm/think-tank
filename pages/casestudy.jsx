@@ -141,28 +141,44 @@ const CASE_STUDIES = {
     title: <>ICKS.</>,
     industry: 'Non-Profit Organization',
     engagement: '12 months',
-    scope: 'Brand, web, content',
+    scope: 'Web, journal, donations',
     year: '2024 — 2025',
-    image: null,
+    website: 'https://icks.org/',
+    image: 'assets/clients/icks-case-hero.jpg',
     tone: 'light',
     intro: [
-      'ICKS needed a digital presence that could explain its mission quickly, organize programs clearly, and support a wider community of stakeholders.',
-      'Think Tank shaped the website and content system around simple journeys for donors, partners, members, and first-time visitors.'
+      'The International Council on Korean Studies is a nonprofit, nonpartisan organization dedicated to the advancement of Korean studies and research in Korean affairs in the United States and abroad.',
+      'Think Tank shaped the digital experience around ICKS’s real mission: conferences, publications, the International Journal of Korean Studies, Korean reunification dialogue, Korean American engagement, leadership visibility, and donor support.'
     ],
-    resultsTitle: <>A clearer mission,<br />with cleaner paths.</>,
-    resultsCopy: 'The transformation focused on communication clarity, navigation, and a repeatable publishing structure.',
+    resultsTitle: <>Scholarship,<br />made easier to follow.</>,
+    resultsCopy: 'The updated case study now reflects the live ICKS site: journal access, annual conferences, leadership credibility, donation prompts, and Korean studies mission clarity.',
     metrics: [
-      ['4', '', 'Audience pathways clarified across the site'],
-      ['1', '', 'Reusable content system for ongoing updates'],
-      ['3', '', 'Core program areas reorganized for faster comprehension']
+      ['1996', '', 'Year ICKS was founded'],
+      ['2', 'x', 'International Journal of Korean Studies publishing cadence per year'],
+      ['2025', '', 'Current journal volume featured on the homepage']
     ],
-    problems: ['Mission story was hard to scan quickly', 'Program pages lacked clear next steps', 'Content updates were manual and inconsistent', 'Stakeholder journeys were fragmented'],
+    problems: [
+      'The organization’s academic mission needed to be understandable at first glance',
+      'Journal content, conferences, leadership, and donation pathways needed a clearer hierarchy',
+      'The International Journal of Korean Studies required stronger homepage visibility',
+      'Annual conference history and Korean reunification dialogue needed easier access',
+      'Donor and membership calls to action needed to connect more directly to the mission'
+    ],
     solutions: [
-      ['Positioning structure', ['Clarified the core message', 'Organized content by audience need', 'Created a more focused nonprofit narrative']],
-      ['Website system', ['Reusable page modules', 'Simplified navigation', 'Mobile-first structure']],
-      ['Content operations', ['Repeatable program templates', 'Campaign-ready landing sections', 'Cleaner handoff for internal updates']]
+      ['Mission-first homepage', ['Centered the site around the International Council on Korean Studies name and purpose', 'Explained Korean studies advancement, research, reunification, and Korean American engagement', 'Created a cleaner first-read experience for scholars, donors, and the public']],
+      ['Journal and publication structure', ['Elevated the International Journal of Korean Studies', 'Highlighted Volume XXVI, Number 2, Fall/Winter 2025', 'Created clearer paths to journal archives and featured articles']],
+      ['Conference and leadership pathways', ['Organized annual conference access by year', 'Highlighted leadership and full people directory paths', 'Connected institutional credibility to program discovery']],
+      ['Donation and engagement system', ['Strengthened Donate / Contribute Now calls to action', 'Framed support around elevating Korean voices and scholarship', 'Added stay-connected pathways for ongoing engagement']]
     ],
-    gallery: ['Mission page system', 'Program landing template', 'Donation journey', 'Partner content model', 'Campaign module set'],
+    gallery: [
+      { label: 'ICKS homepage hero system', image: 'assets/clients/icks-case-hero.jpg', tone: 'light' },
+      { label: 'International Council on Korean Studies identity', image: 'assets/clients/icks-case-logo.webp', tone: 'sand' },
+      { label: 'Leadership profile system', image: 'assets/clients/icks-case-leadership-1.jpg', tone: 'dark' },
+      { label: 'Academic leadership content', image: 'assets/clients/icks-case-leadership-2.jpg', tone: 'light' },
+      { label: 'Korean studies advisor profile', image: 'assets/clients/icks-case-leadership-3.jpg', tone: 'lime' },
+      { label: 'Founding member profile', image: 'assets/clients/icks-case-leadership-4.jpg', tone: 'light' },
+      { label: 'Treasurer profile', image: 'assets/clients/icks-case-leadership-5.jpg', tone: 'sand' }
+    ],
     nextId: 'hawaii'
   },
   hawaii: {
