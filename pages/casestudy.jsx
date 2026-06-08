@@ -96,28 +96,43 @@ const CASE_STUDIES = {
     title: <>WhiteCap<br />Institute.</>,
     industry: 'Dental Education & E-commerce',
     engagement: '16 months',
-    scope: 'Inbound, HubSpot, SEO',
+    scope: 'Web, courses, e-commerce',
     year: '2024 — 2025',
-    image: 'assets/clients/whitecap-screen.png',
+    website: 'https://whitecapinstitute.com/',
+    image: 'assets/clients/whitecap-case-training.png',
     tone: 'sand',
     intro: [
-      'WhiteCap Institute had strong expertise and education products, but its digital funnel was not converting attention into qualified demand.',
-      'We rebuilt the inbound system around clearer positioning, stronger website flows, and full-funnel campaign operations through HubSpot.'
+      'WhiteCap Institute is a Utah-based dental implant training facility offering continuing education courses built around guided live patient procedures, hands-on simulations, and instruction from implant professionals.',
+      'Think Tank shaped the digital experience around WhiteCap’s strongest differentiators: a three-day implant bootcamp, real surgical training environments, CE credit credibility, and a course catalog that helps dentists choose the right next step.'
     ],
-    resultsTitle: <>Education demand,<br />built into a funnel.</>,
-    resultsCopy: 'The work connected paid, organic, email, SMS, and CRM activity into one operating system.',
+    resultsTitle: <>Hands-on training,<br />built to convert.</>,
+    resultsCopy: 'The updated case study now reflects the live WhiteCap offer: implant CE courses, real clinical training, national provider credentials, and a clearer path from course interest to registration.',
     metrics: [
-      ['3', '', 'Revenue channels connected across the funnel'],
-      ['1', '', 'Unified HubSpot operating system for marketing and sales'],
-      ['SEO', '', 'Improved site authority and organic lead quality']
+      ['2005', '', 'Year WhiteCap Institute was originally founded'],
+      ['20.5', '', 'CE credits promoted for the 3-Day Bootcamp'],
+      ['10', '', 'Proprietary introductory and advanced modules']
     ],
-    problems: ['B2B inbound funnel was weak', 'Website was outdated', 'Branding felt old', 'Organic leads were hard to generate and manage effectively'],
+    problems: [
+      'The course catalog needed to communicate both clinical rigor and practical accessibility',
+      'The 3-Day Bootcamp value proposition needed stronger positioning around live surgery and hands-on training',
+      'ADA CERP and PACE provider credibility needed to be visible without slowing down course discovery',
+      'Dentists needed clearer paths from course research to registration or contact',
+      'Facility, instructor, and location advantages were not doing enough work in the conversion journey'
+    ],
     solutions: [
-      ['Inbound system', ['HubSpot implementation', 'Lead capture and nurturing flows', 'Audience segmentation']],
-      ['Full-funnel campaigns', ['Paid ads', 'Email marketing', 'SMS marketing', 'SEO blog operation']],
-      ['Website refresh', ['Updated conversion paths', 'Clarified education product pages', 'Improved content hierarchy']]
+      ['Course positioning', ['Centered the site around “Premier Dental Implant Training Courses”', 'Clarified guided live patient procedures and hands-on continuing education', 'Built stronger entry points for the 3-Day Bootcamp and advanced courses']],
+      ['Registration journey', ['Improved calls to action for Register for Class, View Courses, and Contact Us', 'Organized course pages around outcomes, credits, modules, and prerequisites', 'Reduced friction between education content and enrollment intent']],
+      ['Credibility system', ['Elevated ADA CERP and PACE provider information', 'Highlighted instructors with over 20 years of clinical experience', 'Connected WhiteCap’s 2005 origin story to trust and training quality']],
+      ['Experience storytelling', ['Showcased real surgical operatories, modern facilities, and overhead camera training', 'Clarified the Heber Valley / Utah destination experience', 'Used hands-on course imagery to make the training environment tangible']]
     ],
-    gallery: ['Inbound funnel map', 'Course landing page system', 'HubSpot campaign flow', 'SEO blog structure', 'Lead nurture assets'],
+    gallery: [
+      { label: 'Live surgical training environment', image: 'assets/clients/whitecap-case-training.png', tone: 'sand' },
+      { label: 'Premier implant course hero', image: 'assets/clients/whitecap-case-hero.png', tone: 'light' },
+      { label: 'Learn by doing experience', image: 'assets/clients/whitecap-case-experience.png', tone: 'dark' },
+      { label: 'ADA CERP provider credential', image: 'assets/clients/whitecap-case-ada.png', tone: 'light' },
+      { label: 'PACE provider credential', image: 'assets/clients/whitecap-case-pace.png', tone: 'sand' },
+      { label: '3-Day Implant Bootcamp course card', image: 'assets/clients/whitecap-case-bootcamp.png', tone: 'lime' }
+    ],
     nextId: 'icks'
   },
   icks: {
