@@ -52,28 +52,42 @@ const CASE_STUDIES = {
     title: <>HRHK.</>,
     industry: 'Non-Profit Organization',
     engagement: '18 months',
-    scope: 'Web, SEO, content',
+    scope: 'Web, publications, advocacy',
     year: '2024 — 2025',
-    image: 'assets/clients/hrnk-screen.png',
+    website: 'https://www.hrnk.org/',
+    image: 'assets/clients/hrnk-case-hero.webp',
     tone: 'light',
     intro: [
-      'HRHK needed a cleaner digital foundation for a high-stakes mission, with research, advocacy, and educational content that could be discovered and trusted by more people.',
-      'Think Tank rebuilt the site structure, migrated content into WordPress, and strengthened search visibility for a stronger awareness engine.'
+      'The Committee for Human Rights in North Korea is an advocacy and research organization focused on uncovering human rights abuses under the DPRK and educating the public on behalf of the North Korean people.',
+      'Think Tank shaped the digital experience around HRNK’s real operating needs: a mission-led donation path, a large publications archive, events and hearings, newsletter growth, and high-impact education tools like the prison camp interactive.'
     ],
-    resultsTitle: <>Research made<br />easier to find.</>,
-    resultsCopy: 'The engagement focused on credibility, content access, and organic discovery across a large information archive.',
+    resultsTitle: <>Advocacy content,<br />built for action.</>,
+    resultsCopy: 'The updated case study reflects the live HRNK site: mission clarity, report discoverability, donation pathways, and public education around North Korea’s prison camps.',
     metrics: [
-      ['20', 'x', 'Traffic growth after migration and SEO implementation'],
-      ['UN', '', 'Awareness lift supporting United Nations speaking visibility'],
-      ['Wiki', '', 'Content authority strong enough to be referenced externally']
+      ['2001', '', 'Year HRNK was launched by foreign policy and human rights specialists'],
+      ['6', '', 'Guiding action areas presented on the homepage'],
+      ['3D', '', 'Interactive prison camp model promoted as an education tool']
     ],
-    problems: ['Outdated website', 'Existing contents lacked on-page SEO', 'Large archive was difficult to navigate', 'Advocacy content needed stronger discoverability'],
+    problems: [
+      'The mission needed to be understandable immediately for donors, researchers, press, and policymakers',
+      'A deep archive of publications and annual reports needed clearer paths for discovery',
+      'Events, hearings, media, and policy content had to sit within one coherent navigation system',
+      'Donation and newsletter actions needed stronger placement throughout the experience',
+      'Interactive education tools required clearer framing for public awareness'
+    ],
     solutions: [
-      ['Website migration', ['Migrated the site to WordPress', 'Rebuilt navigation around research, advocacy, and news pathways', 'Improved publishing workflows']],
-      ['SEO implementation', ['Updated metadata and page structure', 'Optimized existing high-value content', 'Created stronger internal linking patterns']],
-      ['Content system', ['Organized evergreen resources', 'Clarified audience journeys', 'Prepared the archive for ongoing publication']]
+      ['Mission-first structure', ['Centered the homepage around “Support Human Rights in North Korea”', 'Clarified HRNK’s advocacy and research role', 'Built direct pathways for Donate, About, Publications, Events, Media, and Contact']],
+      ['Publication architecture', ['Organized HRNK publications, annual reports, daily press content, and special projects', 'Improved scanning for latest reports and long-form research', 'Supported large report archives with clearer entry points']],
+      ['Advocacy conversion paths', ['Elevated newsletter subscription', 'Strengthened donation prompts', 'Connected visitors to guiding objectives and policy recommendations']],
+      ['Education and media system', ['Highlighted the interactive prison camp model', 'Structured media, timelines, hearings, and news as public education resources', 'Improved the bridge between research depth and public action']]
     ],
-    gallery: ['Research archive structure', 'Advocacy content templates', 'SEO content model', 'Navigation system', 'Publishing workflow'],
+    gallery: [
+      { label: 'Human rights advocacy homepage', image: 'assets/clients/hrnk-case-hero.webp', tone: 'light' },
+      { label: 'Mission and action section', image: 'assets/clients/hrnk-case-mission.webp', tone: 'sand' },
+      { label: 'Leadership and board content', image: 'assets/clients/hrnk-case-board.webp', tone: 'dark' },
+      { label: 'Latest publications and reports', image: 'assets/clients/hrnk-case-report.jpg', tone: 'light' },
+      { label: 'North Korea prison camp interactive', image: 'assets/clients/hrnk-case-prison-camp.webp', tone: 'lime' }
+    ],
     nextId: 'whitecap'
   },
   whitecap: {
