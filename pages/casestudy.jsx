@@ -187,28 +187,44 @@ const CASE_STUDIES = {
     title: <>Hawaii Elite<br />Chiropractic.</>,
     industry: 'Healthcare Provider',
     engagement: '20 months',
-    scope: 'Brand, web, SEO, paid',
+    scope: 'Web, local SEO, booking',
     year: '2023 — 2025',
-    image: 'assets/clients/hawaii-screen.png',
+    website: 'https://hawaiielitechiropractic.com/',
+    image: 'assets/clients/hawaii-case-hero.jpg',
     tone: 'lime',
     intro: [
-      'Hawaii Elite Chiropractic needed a compliant growth system that could support clinic expansion while making patient acquisition easier to manage.',
-      'We rebuilt the brand and website, improved local search visibility, and connected campaign activity to sales and intake operations.'
+      'Hawaii Elite Chiropractic is a two-location chiropractic provider serving Aiea and Honolulu around the promise “Where Healing Meets Aloha.” The practice offers chiropractic treatment, Graston Technique, orthotics, cold laser therapy, and specialized care for athletes, families, military members, expecting mothers, retirees, and patients with back pain, neck pain, headaches, and migraines.',
+      'Think Tank shaped the digital experience around patient trust and appointment intent: location-specific contact paths, service clarity, award-winning care, review credibility, and a smoother request-an-appointment journey.'
     ],
-    resultsTitle: <>Clinic growth,<br />with a cleaner system.</>,
-    resultsCopy: 'The work supported both brand trust and patient acquisition across two clinic locations.',
+    resultsTitle: <>Local care,<br />built to book.</>,
+    resultsCopy: 'The updated case study reflects the live Hawaii Elite Chiropractic site: two clinic locations, service education, patient satisfaction proof, award badges, and appointment conversion paths.',
     metrics: [
-      ['30', '%', 'Year-over-year revenue growth across both clinics'],
-      ['2', '', 'Clinics supported with a unified marketing system'],
-      ['CRM', '', 'Patient intake and follow-up process improved']
+      ['2', '', 'Clinic locations supported: Aiea and Honolulu'],
+      ['400', '+', 'Google reviews referenced on the website'],
+      ['4.9', '', 'Yelp rating promoted for patient satisfaction']
     ],
-    problems: ['Website migration required', 'CRM implementation needed HIPAA-conscious workflows', 'Patient acquisition was difficult to track', 'Clinic growth needed stronger local visibility'],
+    problems: [
+      'Two clinic locations needed clearer phone, hours, and appointment pathways',
+      'Services and specialized therapies had to be easy for patients to scan before booking',
+      'Award badges and review credibility needed stronger placement in the conversion journey',
+      'The practice story needed to balance clinical care with the “aloha” brand promise',
+      'Patient intake actions needed to connect clearly to request appointment and new patient forms'
+    ],
     solutions: [
-      ['Brand and website', ['Brand refresh', 'WordPress website redevelopment', 'Service pages optimized for conversion']],
-      ['Search and acquisition', ['SEO implementation', 'Paid ads', 'Local patient journey improvements']],
-      ['Sales training', ['CRM setup', 'Follow-up process support', 'Team training for patient inquiries']]
+      ['Location-first structure', ['Clarified Aiea and Honolulu locations', 'Surfaced phone numbers and office hours', 'Created easier pathways to request an appointment']],
+      ['Service education', ['Organized chiropractic treatment, Graston Technique, orthotics, and cold laser therapy', 'Clarified specialized therapy audiences', 'Connected common pain points to treatment options']],
+      ['Trust and proof system', ['Elevated Hawaii’s Best and Island News award badges', 'Highlighted 5-star Google reviews and Yelp 4.9/5 proof', 'Strengthened provider story around Dr. Shaun Ohira and personalized care']],
+      ['Patient conversion flow', ['Improved request-appointment visibility', 'Connected patient resources, insurance, and forms', 'Structured the site around fast decision-making for patients in pain']]
     ],
-    gallery: ['Healthcare website system', 'Local SEO structure', 'Patient inquiry flow', 'Campaign landing pages', 'CRM intake process'],
+    gallery: [
+      { label: 'Where Healing Meets Aloha hero', image: 'assets/clients/hawaii-case-hero.jpg', tone: 'lime' },
+      { label: 'Hawaii Elite Chiropractic identity', image: 'assets/clients/hawaii-case-logo.png', tone: 'light' },
+      { label: 'Award-winning chiropractic care', image: 'assets/clients/hawaii-case-shaun.jpg', tone: 'dark' },
+      { label: 'Patient treatment proof', image: 'assets/clients/hawaii-case-treatment.jpeg', tone: 'sand' },
+      { label: 'Hawaii’s Best 2024 badge', image: 'assets/clients/hawaii-case-best-2024.jpg', tone: 'lime' },
+      { label: 'Island News Best of Hawaii badge', image: 'assets/clients/hawaii-case-island-news.png', tone: 'light' },
+      { label: 'Hawaii’s Best 2023 badge', image: 'assets/clients/hawaii-case-best-2023.png', tone: 'sand' }
+    ],
     nextId: 'abs'
   },
   abs: {
