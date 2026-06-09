@@ -214,19 +214,21 @@ function K01_ScalingIntro() {
 function K02_MarketingAgency() {
   return (
     <Sprite start={3.2} end={7.0}>
-      {/* Yellow block stays anchored under "scaling" */}
+      {/* Yellow block stays anchored under the original "scaling" position */}
       <YellowBlock
-        x={530} y={460} width={860} height={230}
+        x={960} y={420} width={1140} height={280}
+        align="center"
         start={0} entryDur={0.5}
         fromWidth={1140}
         pulse
       />
 
-      {/* "scaling" — the gravity center, settles in place */}
+      {/* "scaling" remains the gravity center from the opening frame */}
       <BigWord
         text="scaling"
-        x={550} y={468}
-        size={310}
+        x={960} y={428}
+        size={400}
+        align="center"
         start={0}
         entryDur={0.5}
         fromY={0}
@@ -238,10 +240,11 @@ function K02_MarketingAgency() {
       {/* "Marketing Agency" — slides down from above */}
       <BigWord
         text="Marketing Agency"
-        x={140} y={210}
-        size={170}
+        x={960} y={230}
+        size={176}
         weight={900}
         letterSpacing="-0.04em"
+        align="center"
         start={0.4}
         entryDur={0.6}
         fromY={-100}
@@ -252,8 +255,8 @@ function K02_MarketingAgency() {
       {/* "for" — slides in from left */}
       <BigWord
         text="for"
-        x={350} y={478}
-        size={170}
+        x={395} y={475}
+        size={178}
         weight={900}
         letterSpacing="-0.04em"
         align="right"
@@ -267,10 +270,11 @@ function K02_MarketingAgency() {
       {/* "business." — rises from below */}
       <BigWord
         text="business."
-        x={140} y={770}
-        size={200}
+        x={960} y={760}
+        size={190}
         weight={900}
         letterSpacing="-0.045em"
+        align="center"
         start={1.3}
         entryDur={0.65}
         fromY={140}
