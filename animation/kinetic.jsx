@@ -189,7 +189,7 @@ function KScalingCore() {
     <Sprite start={0} end={7.0}>
       {/* Yellow block expands first */}
       <YellowBlock
-        x={960} y={420} width={1140} height={280}
+        x={1300} y={420} width={1140} height={280}
         align="center"
         start={0.2} entryDur={0.7}
       />
@@ -197,7 +197,7 @@ function KScalingCore() {
       {/* "scaling" pops in over the yellow */}
       <BigWord
         text="scaling"
-        x={960} y={428}
+        x={1300} y={428}
         size={400}
         align="center"
         start={0.7}
@@ -210,19 +210,19 @@ function KScalingCore() {
   );
 }
 
-/* ── Scene 02: 3 → 7s — full phrase emerges around "scaling" ── */
+/* ── Scene 02: 1.2 → 7s — full phrase emerges around "scaling" ── */
 function K02_MarketingAgency() {
   return (
-    <Sprite start={3.2} end={7.0}>
+    <Sprite start={1.2} end={7.0}>
       {/* "Marketing Agency" — slides down from above */}
       <BigWord
         text="Marketing Agency"
-        x={960} y={230}
+        x={1300} y={230}
         size={176}
         weight={900}
         letterSpacing="-0.04em"
         align="center"
-        start={0.4}
+        start={0.35}
         entryDur={0.6}
         fromY={-100}
         fromScale={0.92}
@@ -232,12 +232,12 @@ function K02_MarketingAgency() {
       {/* "for" — slides in from left */}
       <BigWord
         text="for"
-        x={355} y={475}
+        x={600} y={475}
         size={176}
         weight={900}
         letterSpacing="-0.04em"
         align="right"
-        start={0.9}
+        start={0.85}
         entryDur={0.55}
         fromY={0}
         fromScale={0.85}
@@ -247,12 +247,12 @@ function K02_MarketingAgency() {
       {/* "business" — completes the single-line phrase */}
       <BigWord
         text="business"
-        x={1455} y={482}
-        size={160}
+        x={1960} y={482}
+        size={150}
         weight={900}
         letterSpacing="-0.045em"
         align="left"
-        start={1.3}
+        start={1.25}
         entryDur={0.65}
         fromY={0}
         fromScale={0.9}

@@ -278,7 +278,7 @@ function LandingPage({ go }) {
         <div className="hero-stage">
           <div className="hero-animation">
             <iframe
-              src="animation/Kinetic Hero.html?v=hero-phrase-2"
+              src="animation/Kinetic Hero.html?v=hero-phrase-3"
               title="Marketing Agency for scaling business"
               loading="lazy"
               frameBorder="0"
