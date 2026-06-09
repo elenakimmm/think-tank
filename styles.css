@@ -1743,11 +1743,11 @@ main {
 }
 
 .hero-lab {
-  padding: 0 var(--gutter) 110px;
+  padding: 0 var(--gutter) 82px;
 }
 
 .hero-stage {
-  min-height: clamp(610px, 82vh, 880px);
+  min-height: clamp(560px, 76vh, 780px);
   border: 0;
   box-shadow: none;
   background: #fff;
@@ -1762,7 +1762,7 @@ main {
 .hero-animation {
   inset: 0;
   width: 100%;
-  height: calc(100% - 96px);
+  height: calc(100% - 42px);
   opacity: 1;
   background: #fff;
   mix-blend-mode: normal;
@@ -1811,6 +1811,7 @@ main {
   align-items: end;
   position: relative;
   z-index: 2;
+  margin-top: -34px;
 }
 
 .hero-copy h1,
