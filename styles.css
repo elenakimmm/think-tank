@@ -2597,3 +2597,44 @@ h4,
     font-size: 42px !important;
   }
 }
+
+/* Full-bleed landing dividers and project tabs */
+.page.section,
+.page.lab-section,
+.page.community-section {
+  border-top: 0 !important;
+  position: relative;
+}
+
+.page.section::before,
+.page.lab-section::before,
+.page.community-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 100vw;
+  height: 1px;
+  transform: translateX(-50%);
+  background: var(--hairline);
+}
+
+.projects-section {
+  max-width: none;
+}
+
+.projects-section .projects-head,
+.projects-section .client-tabs {
+  max-width: var(--max);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.projects-section .client-tabs {
+  max-width: none;
+  width: 100%;
+}
+
+.projects-section .client-content {
+  max-width: 1540px;
+}
