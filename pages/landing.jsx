@@ -179,6 +179,12 @@ const CLIENT_LOGOS = [
 { name: 'A+ Nail School', src: 'assets/clients/aplus-nail-school.png' },
 { name: 'WhiteCap Institute', src: 'assets/clients/whitecap-institute.png' }];
 
+const WORKSHOP_IMAGES = [
+{ label: 'Workshop · 01', src: 'assets/clients/aplus-case-events.jpeg' },
+{ label: 'Workshop · 02', src: 'assets/clients/whitecap-case-training.png' },
+{ label: 'Workshop · 03', src: 'assets/clients/sta-case-business.jpeg' },
+{ label: 'Workshop · 04', src: 'assets/clients/hrnk-case-board.webp' }];
+
 
 /* ============================================================
    Browser-style screen mockup (editorial / light)
@@ -442,10 +448,27 @@ function LandingPage({ go }) {
           </Reveal>
 
           <Reveal className="workshops-grid">
-            <div className="workshop-cell"><Placeholder label="Workshop · 01" tone="sand" /></div>
-            <div className="workshop-cell"><Placeholder label="Workshop · 02" tone="warm" /></div>
-            <div className="workshop-cell"><Placeholder label="Workshop · 03" tone="lime" /></div>
-            <div className="workshop-cell"><Placeholder label="Workshop · 04" tone="light" /></div>
+            {WORKSHOP_IMAGES.map((workshop) =>
+            <div className="workshop-cell" key={workshop.label} style={{ position: 'relative' }}>
+                <img
+                src={workshop.src}
+                alt={workshop.label}
+                style={{ width: '100%', height: '100%', objectFit: 'cover', display: 'block' }} />
+                <span style={{
+                position: 'absolute',
+                left: 18,
+                bottom: 18,
+                color: '#fff',
+                fontFamily: 'JetBrains Mono, monospace',
+                fontSize: 12,
+                letterSpacing: 1,
+                textTransform: 'uppercase',
+                textShadow: '0 1px 8px rgba(0,0,0,0.45)'
+              }}>
+                  {workshop.label}
+                </span>
+              </div>
+            )}
           </Reveal>
         </div>
       </section>
