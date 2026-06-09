@@ -2578,3 +2578,15 @@ h4,
 .solution h4 {
   letter-spacing: -2px !important;
 }
+
+.story.story-compact {
+  font-size: 60px !important;
+  line-height: 1.02 !important;
+  max-width: none;
+}
+
+@media (max-width: 760px) {
+  .story.story-compact {
+    font-size: 42px !important;
+  }
+}

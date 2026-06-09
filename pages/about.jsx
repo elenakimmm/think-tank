@@ -42,10 +42,10 @@ function AboutPage({ go }) {
       <section className="page page-hero" style={{ padding: "151px 60px 101px" }}>
         <div className="label">Our story — Who we are</div>
         <Reveal>
-          <h1 className="story" style={{ marginTop: 36, fontSize: "94px", lineHeight: "1" }}>
+          <h1 className="story story-compact" style={{ marginTop: 36 }}>
             We design for a better today,
             <br />
-            <span className="quiet">because the future isn't<br />some far-off dream.</span>
+            <span className="quiet">because the future isn't some far-off dream.</span>
           </h1>
         </Reveal>
         <Reveal delay={120}>
