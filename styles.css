@@ -582,6 +582,7 @@ main {
   border-right: 1px solid var(--hairline);
   position: relative;
 }
+.process-step:first-child { border-left: 1px solid var(--hairline); }
 .process-step:last-child { border-right: 0; }
 @media (max-width: 880px) {
   .process-step { border-right: 0; border-bottom: 1px solid var(--hairline); padding-right: 28px; }
@@ -607,7 +608,7 @@ main {
   background: var(--ink);
   border-radius: 50%;
 }
-.process-step:first-child .dot { left: 0; }
+.process-step:first-child .dot { left: -5px; }
 
 /* ============================================================
    Big editorial statement
@@ -2576,17 +2577,22 @@ h4,
 .card-meta h3,
 .compare-col h3,
 .solution h4 {
-  letter-spacing: -2px !important;
+  letter-spacing: 0 !important;
 }
 
-.story.story-compact {
-  font-size: 60px !important;
+.story.story-compact,
+.page-hero .works-title,
+.contact-hero-title {
+  font-size: 80px !important;
   line-height: 1.02 !important;
+  letter-spacing: 0 !important;
   max-width: none;
 }
 
 @media (max-width: 760px) {
-  .story.story-compact {
+  .story.story-compact,
+  .page-hero .works-title,
+  .contact-hero-title {
     font-size: 42px !important;
   }
 }

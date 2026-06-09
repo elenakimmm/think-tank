@@ -52,7 +52,7 @@ function ContactPage() {
     <div className="page-enter">
       <section className="page page-hero">
         <div className="label">Contact — Start a project</div>
-        <h1 style={{ marginTop: 30 }}>
+        <h1 className="contact-hero-title" style={{ marginTop: 30 }}>
           Let's build something<br />that <span style={{ background: 'var(--accent)', padding: '0 0.1em 0.04em' }}>grows</span>.
         </h1>
         <p className="sub">
