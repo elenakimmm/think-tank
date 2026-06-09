@@ -15,7 +15,7 @@
   --sand: #d8c8a4;
   --shadow: 0 28px 80px rgba(19, 20, 16, 0.12);
   --gutter: 60px;
-  --max: 1640px;
+  --max: 1200px;
 }
 
 * { box-sizing: border-box; margin: 0; padding: 0; }
@@ -1697,7 +1697,7 @@ main {
   --faint: #f7f7f7;
   --accent: #dfff20;
   --gutter: 60px;
-  --max: none;
+  --max: 1200px;
 }
 
 html,
@@ -1708,7 +1708,7 @@ body {
 }
 
 .page {
-  max-width: none;
+  max-width: var(--max);
 }
 
 .nav {
