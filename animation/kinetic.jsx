@@ -183,10 +183,10 @@ function Caption({ text, x, y, size = 14, start = 0, align = 'left', color = K.d
    SCENES — total 7 seconds
    ============================================================ */
 
-/* ── Scene 01: 0 → 3s — Overture ──────────────────────────── */
-function K01_ScalingIntro() {
+/* ── Persistent center: 0 → 7s — "scaling" never remounts ─── */
+function KScalingCore() {
   return (
-    <Sprite start={0} end={3.2}>
+    <Sprite start={0} end={7.0}>
       {/* Yellow block expands first */}
       <YellowBlock
         x={960} y={420} width={1140} height={280}
@@ -214,29 +214,6 @@ function K01_ScalingIntro() {
 function K02_MarketingAgency() {
   return (
     <Sprite start={3.2} end={7.0}>
-      {/* Yellow block stays anchored under the original "scaling" position */}
-      <YellowBlock
-        x={960} y={420} width={1140} height={280}
-        align="center"
-        start={0} entryDur={0.5}
-        fromWidth={1140}
-        pulse
-      />
-
-      {/* "scaling" remains the gravity center from the opening frame */}
-      <BigWord
-        text="scaling"
-        x={960} y={428}
-        size={400}
-        align="center"
-        start={0}
-        entryDur={0.5}
-        fromY={0}
-        fromScale={1.0}
-        drift={{ ampY: 3, freq: 0.5 }}
-        zIndex={4}
-      />
-
       {/* "Marketing Agency" — slides down from above */}
       <BigWord
         text="Marketing Agency"
@@ -255,8 +232,8 @@ function K02_MarketingAgency() {
       {/* "for" — slides in from left */}
       <BigWord
         text="for"
-        x={395} y={475}
-        size={178}
+        x={355} y={475}
+        size={176}
         weight={900}
         letterSpacing="-0.04em"
         align="right"
@@ -267,17 +244,17 @@ function K02_MarketingAgency() {
         zIndex={3}
       />
 
-      {/* "business." — rises from below */}
+      {/* "business" — completes the single-line phrase */}
       <BigWord
-        text="business."
-        x={960} y={760}
-        size={190}
+        text="business"
+        x={1455} y={482}
+        size={160}
         weight={900}
         letterSpacing="-0.045em"
-        align="center"
+        align="left"
         start={1.3}
         entryDur={0.65}
-        fromY={140}
+        fromY={0}
         fromScale={0.9}
         zIndex={2}
       />
@@ -291,7 +268,7 @@ function K02_MarketingAgency() {
 function KineticHero() {
   return (
     <React.Fragment>
-      <K01_ScalingIntro />
+      <KScalingCore />
       <K02_MarketingAgency />
     </React.Fragment>
   );
