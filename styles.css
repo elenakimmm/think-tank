@@ -1473,7 +1473,7 @@ main {
   text-wrap: balance;
 }
 .testimonial-quote .qmark {
-  background: var(--accent);
+  background: transparent;
   padding: 0 0.06em 0.04em;
   font-style: normal;
 }
@@ -2050,7 +2050,7 @@ main {
 
 .projects-head {
   scroll-margin-top: 130px;
-  border-top: 1px solid var(--hairline);
+  border-top: 0;
   padding-top: 128px;
   margin-bottom: 70px;
   text-align: center;
@@ -2185,7 +2185,7 @@ main {
 }
 
 .testimonial-quote .qmark {
-  background: var(--accent);
+  background: transparent;
 }
 
 .testimonial-avatar {

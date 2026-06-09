@@ -316,7 +316,6 @@ function LandingPage({ go }) {
         <div className="disc-grid">
           {DISCIPLINES.map((d, i) =>
           <Reveal key={d.title} delay={i * 70} className="disc-cell">
-              <span className="num">{d.n} / 04</span>
               <h3>{d.title}</h3>
               <ul>
                 {d.items.map((it) => <li key={it}>{it}</li>)}
