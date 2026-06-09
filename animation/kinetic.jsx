@@ -189,7 +189,7 @@ function KScalingCore() {
     <Sprite start={0} end={7.0}>
       {/* Yellow block expands first */}
       <YellowBlock
-        x={1300} y={420} width={1140} height={280}
+        x={1300} y={428} width={940} height={230}
         align="center"
         start={0.2} entryDur={0.7}
       />
@@ -197,8 +197,8 @@ function KScalingCore() {
       {/* "scaling" pops in over the yellow */}
       <BigWord
         text="scaling"
-        x={1300} y={428}
-        size={400}
+        x={1300} y={438}
+        size={320}
         align="center"
         start={0.7}
         entryDur={0.55}
@@ -217,8 +217,8 @@ function K02_MarketingAgency() {
       {/* "Marketing Agency" — slides down from above */}
       <BigWord
         text="Marketing Agency"
-        x={1300} y={230}
-        size={176}
+        x={1300} y={270}
+        size={142}
         weight={900}
         letterSpacing="-0.04em"
         align="center"
@@ -232,8 +232,8 @@ function K02_MarketingAgency() {
       {/* "for" — slides in from left */}
       <BigWord
         text="for"
-        x={600} y={475}
-        size={176}
+        x={600} y={490}
+        size={142}
         weight={900}
         letterSpacing="-0.04em"
         align="right"
@@ -247,8 +247,8 @@ function K02_MarketingAgency() {
       {/* "business" — completes the single-line phrase */}
       <BigWord
         text="business"
-        x={1960} y={482}
-        size={150}
+        x={1990} y={494}
+        size={128}
         weight={900}
         letterSpacing="-0.045em"
         align="left"

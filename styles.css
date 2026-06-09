@@ -1771,8 +1771,8 @@ main {
 .hero-animation iframe {
   left: 50%;
   top: 50%;
-  width: min(1540px, 128vw);
-  height: min(760px, 74vh);
+  width: min(1380px, 116vw);
+  height: min(700px, 68vh);
   transform: translate(-50%, -50%);
 }
 
