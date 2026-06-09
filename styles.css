@@ -2550,3 +2550,31 @@ select,
     font-size: 14px !important;
   }
 }
+
+/* Heading title tracking */
+h1,
+h2,
+h3,
+h4,
+.story,
+.hero-headline,
+.hero-copy h1,
+.page-hero h1,
+.works-title,
+.section-head h2,
+.disc-cell h3,
+.projects-head h2,
+.client-detail h3,
+.client-title,
+.workshops-text h2,
+.community-text h2,
+.community-card h3,
+.finale h2,
+.statement,
+.footer .footer-headline,
+.service-cell h3,
+.card-meta h3,
+.compare-col h3,
+.solution h4 {
+  letter-spacing: -2px !important;
+}
