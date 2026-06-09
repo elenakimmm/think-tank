@@ -232,7 +232,7 @@ function K02_MarketingAgency() {
       {/* "for" — slides in from left */}
       <BigWord
         text="for"
-        x={600} y={490}
+        x={760} y={490}
         size={142}
         weight={900}
         letterSpacing="-0.04em"
@@ -247,7 +247,7 @@ function K02_MarketingAgency() {
       {/* "business" — completes the single-line phrase */}
       <BigWord
         text="business"
-        x={1990} y={494}
+        x={1840} y={494}
         size={128}
         weight={900}
         letterSpacing="-0.045em"
