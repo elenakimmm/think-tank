@@ -53,7 +53,7 @@ function ContactPage() {
       <section className="page page-hero">
         <div className="label">Contact — Start a project</div>
         <h1 style={{ marginTop: 30 }}>
-          Let's build<br />something<br />that <span style={{ background: 'var(--accent)', padding: '0 0.1em 0.04em' }}>grows</span>.
+          Let's build something<br />that <span style={{ background: 'var(--accent)', padding: '0 0.1em 0.04em' }}>grows</span>.
         </h1>
         <p className="sub">
           Tell us about your business, goals, and growth challenges. We respond
@@ -130,8 +130,7 @@ function ContactPage() {
         <Reveal>
           <p className="statement">
             <span className="quiet">Growth starts with clarity.</span><br />
-            Let's build the <span className="hl">system</span><br />
-            behind it.
+            Let's build the <span className="hl">system</span> behind it.
           </p>
         </Reveal>
       </section>

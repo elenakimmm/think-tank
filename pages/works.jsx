@@ -42,9 +42,8 @@ function WorksPage({ go }) {
       <section className="page section" style={{ padding: "151px 60px" }}>
         <Reveal>
           <p className="statement">
-            <span className="quiet">Every project starts</span><br />
-            with one question: <span className="hl">what's the system</span><br />
-            behind the result?
+            <span className="quiet">Every project starts with one question:</span><br />
+            <span className="hl">what's the system</span> behind the result?
           </p>
         </Reveal>
       </section>

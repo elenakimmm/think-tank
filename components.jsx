@@ -142,7 +142,7 @@ function Footer({ go }) {
           <div className="footer-headline">
             Growth starts with clarity.
             <br />
-            <span style={{ color: '#b8b8b8' }}>Let's build the system behind it.</span>
+            <span style={{ color: '#b8b8b8', whiteSpace: 'nowrap' }}>Let's build the system behind it.</span>
           </div>
           <button onClick={() => go('contact')} className="btn btn-primary"
           style={{ justifySelf: 'end', padding: '18px 28px', fontSize: 14 }}>
