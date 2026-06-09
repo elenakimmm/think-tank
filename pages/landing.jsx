@@ -490,15 +490,11 @@ function LandingPage({ go }) {
           </Reveal>
 
           <Reveal className="community-card">
-            <div className="label" style={{ marginBottom: 14 }}>Why this community works</div>
             <h3>Stop guessing.<br />Start proving.</h3>
             <p>
               Marketing is full of noise. We focus on clarity, measurable
               growth, and honest experimentation.
             </p>
-            <div className="punch">
-              A peer group of operators, not theorists.
-            </div>
             <button className="btn" onClick={() => go('contact')}>
               Request access <span className="arrow">→</span>
             </button>
