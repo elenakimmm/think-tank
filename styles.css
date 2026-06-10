@@ -2590,10 +2590,14 @@ h4,
 .story.story-compact,
 .page-hero .works-title,
 .page-hero h1.contact-hero-title {
-  font-size: 80px !important;
+  font-size: clamp(48px, 4.5vw, 80px) !important;
   line-height: 1.02 !important;
   letter-spacing: 0 !important;
   max-width: none;
+}
+
+.story.story-compact span {
+  white-space: nowrap;
 }
 
 @media (max-width: 760px) {

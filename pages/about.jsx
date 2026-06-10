@@ -43,7 +43,7 @@ function AboutPage({ go }) {
         <div className="label">Our story — Who we are</div>
         <Reveal>
           <h1 className="story story-compact" style={{ marginTop: 36 }}>
-            We design for a better today,
+            <span>We design for a better today,</span>
             <br />
             <span className="quiet">because the future isn't some far-off dream.</span>
           </h1>
@@ -69,7 +69,7 @@ function AboutPage({ go }) {
         <Reveal>
           <div className="section-head">
             <div>
-              <h2 className="single-line-title" style={{ marginTop: 22 }}>The people behind the work.</h2>
+              <h2 className="single-line-title" style={{ marginTop: 22 }}>The people behind the work</h2>
             </div>
           </div>
         </Reveal>
@@ -92,7 +92,7 @@ function AboutPage({ go }) {
             <div>
               <div className="label">What we do</div>
               <h2 className="single-line-title" style={{ marginTop: 22 }}>
-                Identify and eliminate your biggest growth inhibitors.
+                Identify and eliminate your biggest growth inhibitors
               </h2>
             </div>
           </div>
@@ -115,7 +115,7 @@ function AboutPage({ go }) {
             <div>
               <div className="label">TTC Process</div>
               <h2 className="single-line-title" style={{ marginTop: 22, textAlign: "left" }}>
-                Five steps, in order.
+                Five steps, in order
               </h2>
             </div>
           </div>
