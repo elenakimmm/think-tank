@@ -53,7 +53,7 @@ function ContactPage() {
       <section className="page page-hero">
         <div className="label">Contact — Start a project</div>
         <h1 className="contact-hero-title" style={{ marginTop: 30 }}>
-          Let's build something<br />that <span style={{ background: 'var(--accent)', padding: '0 0.1em 0.04em' }}>grows</span>.
+          Let's build something<br />that <span className="contact-highlight">grows</span>.
         </h1>
         <p className="sub">
           Tell us about your business, goals, and growth challenges. We respond
@@ -114,10 +114,6 @@ function ContactPage() {
             </div>
 
             <div className="submit-row" style={{ gridColumn: 'span 2' }}>
-              <p className="small">
-                By submitting this form you agree to be contacted about your
-                project. We respond within one business day, M – F.
-              </p>
               <button className="btn btn-primary" type="submit" style={{ padding: '18px 28px', fontSize: 14 }}>
                 Start your project <span className="arrow">→</span>
               </button>

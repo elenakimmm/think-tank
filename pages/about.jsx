@@ -42,7 +42,7 @@ function AboutPage({ go }) {
       <section className="page page-hero" style={{ padding: "151px 60px 101px" }}>
         <div className="label">Our story — Who we are</div>
         <Reveal>
-          <h1 className="story story-compact" style={{ marginTop: 36 }}>
+          <h1 className="story story-compact about-story-title" style={{ marginTop: 36 }}>
             <span>We design for a better today,</span>
             <br />
             <span className="quiet">because the future isn't some far-off dream.</span>
@@ -91,7 +91,7 @@ function AboutPage({ go }) {
           <div className="section-head">
             <div>
               <div className="label">What we do</div>
-              <h2 className="single-line-title" style={{ marginTop: 22 }}>
+              <h2 className="single-line-title about-wwd-title" style={{ marginTop: 22 }}>
                 Identify and eliminate your biggest growth inhibitors
               </h2>
             </div>
