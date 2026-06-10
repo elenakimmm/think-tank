@@ -524,13 +524,13 @@ window.LandingPage = LandingPage;
 
 /* Re-export the legacy constants other pages still use */
 window.PROJECTS = window.PROJECTS || [
-{ id: 'aplus', name: 'A+ Nail School', cat: 'Trade School & Education', tone: 'warm' },
-{ id: 'hrhk', name: 'HRHK', cat: 'Non-Profit Organization', tone: 'light' },
-{ id: 'whitecap', name: 'Whitecap', cat: 'Dental Education & E-commerce', tone: 'sand' },
-{ id: 'icks', name: 'ICKS', cat: 'Non-Profit Organization', tone: 'light' },
-{ id: 'hawaii', name: 'Hawaii', cat: 'Healthcare Provider', tone: 'lime' },
-{ id: 'abs', name: 'ABS French School', cat: 'Education', tone: 'dark' },
-{ id: 'sta', name: 'Straight Talk Advisor', cat: 'Executive Advisory & Consulting', tone: 'sand' }];
+{ id: 'aplus', name: 'A+ Nail School', cat: 'Trade School & Education', tone: 'warm', image: 'assets/clients/aplus-screen.png' },
+{ id: 'hrhk', name: 'HRNK', cat: 'Non-Profit Organization', tone: 'light', image: 'assets/clients/hrnk-screen.png' },
+{ id: 'whitecap', name: 'WhiteCap Institute', cat: 'Dental Education & E-commerce', tone: 'sand', image: 'assets/clients/whitecap-screen.png' },
+{ id: 'icks', name: 'ICKS', cat: 'Non-Profit Organization', tone: 'light', image: 'assets/clients/icks-case-hero.jpg' },
+{ id: 'hawaii', name: 'Hawaii Elite Chiropractic', cat: 'Healthcare Provider', tone: 'lime', image: 'assets/clients/hawaii-screen.png' },
+{ id: 'abs', name: 'ABS French School', cat: 'Education', tone: 'dark', image: 'assets/clients/abs-screen.png' },
+{ id: 'sta', name: 'Straight Talk Advisor', cat: 'Executive Advisory & Consulting', tone: 'sand', image: 'assets/clients/sta-case-hero.jpg' }];
 
 window.PROCESS = window.PROCESS || [
 { n: '01', t: 'Brand Positioning & Development' },

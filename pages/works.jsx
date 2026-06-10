@@ -1,5 +1,13 @@
 /* global React, Reveal, Placeholder, PROJECTS */
 
+function ProjectImage({ project }) {
+  if (project.image) {
+    return <img src={project.image} alt={`${project.name} project`} />;
+  }
+
+  return <Placeholder label={project.name} tone={project.tone} />;
+}
+
 function WorksPage({ go }) {
   return (
     <div className="page-enter">
@@ -25,7 +33,7 @@ function WorksPage({ go }) {
             onClick={(e) => {e.preventDefault();go(`case:${p.id}`);}}>
             
               <div className="card-media" style={{ aspectRatio: i % 3 === 1 ? '4/5' : '5/4' }}>
-                <Placeholder label={p.name} tone={p.tone} />
+                <ProjectImage project={p} />
               </div>
               <div className="card-meta">
                 <div>
