@@ -2613,10 +2613,31 @@ h4,
 }
 
 .contact-highlight {
-  background: var(--accent);
-  padding: 0 0.08em;
+  background: linear-gradient(var(--accent), var(--accent)) 0 58% / 100% 52% no-repeat;
+  padding: 0 0.06em;
   box-decoration-break: clone;
   -webkit-box-decoration-break: clone;
+}
+
+.about-story-title {
+  letter-spacing: -2px !important;
+}
+
+.project-grid {
+  row-gap: clamp(34px, 4vw, 62px) !important;
+}
+
+.project-grid.masonry .card:nth-child(even) {
+  margin-top: clamp(18px, 2.5vw, 38px) !important;
+}
+
+.project-grid.masonry .card:nth-child(4n) {
+  margin-top: clamp(28px, 3.5vw, 54px) !important;
+}
+
+.metric .big sup {
+  vertical-align: baseline !important;
+  line-height: 1 !important;
 }
 
 @media (max-width: 760px) {

@@ -45,7 +45,9 @@ function AboutPage({ go }) {
           <h1 className="story story-compact about-story-title" style={{ marginTop: 36 }}>
             <span>We design for a better today,</span>
             <br />
-            <span className="quiet">because the future isn't some far-off dream.</span>
+            <span className="quiet">because the future isn't some</span>
+            <br />
+            <span className="quiet">far-off dream.</span>
           </h1>
         </Reveal>
         <Reveal delay={120}>
