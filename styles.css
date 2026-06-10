@@ -2693,6 +2693,38 @@ h4,
   font-size: 10px;
 }
 
+.cs-next-row {
+  display: grid;
+  grid-template-columns: minmax(0, 1fr) auto;
+  align-items: center;
+  gap: 60px;
+}
+
+.cs-next-title {
+  appearance: none;
+  border: 0;
+  background: transparent;
+  color: var(--ink);
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 18px;
+  padding: 0;
+  text-align: left;
+}
+
+.cs-next-title .label {
+  color: var(--muted);
+}
+
+.cs-next-title > span:last-child {
+  font-size: clamp(42px, 6vw, 80px);
+  font-weight: 800;
+  line-height: 0.95;
+  letter-spacing: 0;
+}
+
 .cs-next-actions {
   display: flex;
   flex-direction: column;
@@ -2714,6 +2746,11 @@ h4,
   .cs-next-actions {
     align-items: stretch;
     width: 100%;
+  }
+
+  .cs-next-row {
+    grid-template-columns: 1fr;
+    gap: 34px;
   }
 
   .cs-next-actions .btn {

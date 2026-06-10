@@ -347,6 +347,7 @@ function GalleryTile({ tile, fallbackTone }) {
 
 function CaseStudyPage({ go, caseId = 'aplus' }) {
   const item = CASE_STUDIES[caseId] || CASE_STUDIES.aplus;
+  const nextItem = CASE_STUDIES[item.nextId] || CASE_STUDIES.aplus;
 
   return (
     <div className="page-enter">
@@ -494,13 +495,19 @@ function CaseStudyPage({ go, caseId = 'aplus' }) {
 
       <section className="page section">
         <Reveal>
-          <div className="cs-next-actions">
-            <button className="btn btn-ghost" onClick={() => go(`case:${item.nextId}`)}>
-              Next case <span className="arrow">→</span>
+          <div className="cs-next-row">
+            <button className="cs-next-title" onClick={() => go(`case:${item.nextId}`)}>
+              <span className="label">Next case</span>
+              <span>{nextItem.name}</span>
             </button>
-            <button className="btn btn-ghost" onClick={() => go('works')}>
-              All works <span className="arrow">→</span>
-            </button>
+            <div className="cs-next-actions">
+              <button className="btn btn-ghost" onClick={() => go(`case:${item.nextId}`)}>
+                Next case <span className="arrow">→</span>
+              </button>
+              <button className="btn btn-ghost" onClick={() => go('works')}>
+                All works <span className="arrow">→</span>
+              </button>
+            </div>
           </div>
         </Reveal>
       </section>
