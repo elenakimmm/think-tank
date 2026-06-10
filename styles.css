@@ -2638,3 +2638,73 @@ h4,
 .projects-section .client-content {
   max-width: 1540px;
 }
+
+/* Case study shared refinements */
+.cs-page-hero {
+  padding-top: clamp(76px, 10vw, 142px);
+}
+
+.cs-title {
+  margin-top: 0 !important;
+  white-space: nowrap;
+  font-size: clamp(54px, 7.4vw, 118px) !important;
+  line-height: 0.92 !important;
+  letter-spacing: 0 !important;
+}
+
+.cs-meta-cell {
+  padding-left: 28px;
+}
+
+.cs-meta-cell:first-child {
+  padding-left: 28px;
+}
+
+.metric {
+  padding-left: 28px;
+}
+
+.metric .big {
+  font-size: clamp(64px, 8.5vw, 142px);
+  letter-spacing: 0 !important;
+}
+
+.metric p {
+  margin-left: 0;
+}
+
+.solution {
+  padding-left: 28px;
+}
+
+.solution .sn {
+  font-size: 10px;
+}
+
+.cs-next-actions {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 18px;
+  margin-left: auto;
+}
+
+.cs-next-actions .btn {
+  min-width: 220px;
+}
+
+@media (max-width: 760px) {
+  .cs-title {
+    white-space: normal;
+    font-size: clamp(42px, 13vw, 68px) !important;
+  }
+
+  .cs-next-actions {
+    align-items: stretch;
+    width: 100%;
+  }
+
+  .cs-next-actions .btn {
+    width: 100%;
+  }
+}

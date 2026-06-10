@@ -347,17 +347,11 @@ function GalleryTile({ tile, fallbackTone }) {
 
 function CaseStudyPage({ go, caseId = 'aplus' }) {
   const item = CASE_STUDIES[caseId] || CASE_STUDIES.aplus;
-  const next = CASE_STUDIES[item.nextId] || CASE_STUDIES.aplus;
 
   return (
     <div className="page-enter">
-      <section className="page page-hero">
-        <div style={{ display: 'flex', gap: 24, alignItems: 'center', flexWrap: 'wrap' }}>
-          <div className="label">Case Study — {item.index}</div>
-          <div style={{ width: 60, height: 1, background: '#eaeaea' }}></div>
-          <div className="label" style={{ color: '#111' }}>{item.name}</div>
-        </div>
-        <h1 style={{ marginTop: 30 }}>{item.title}</h1>
+      <section className="page page-hero cs-page-hero">
+        <h1 className="cs-title">{item.name}</h1>
         <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 80, marginTop: 60, maxWidth: 1300 }}
              className="cs-intro">
           {item.intro.map((copy, i) =>
@@ -500,13 +494,7 @@ function CaseStudyPage({ go, caseId = 'aplus' }) {
 
       <section className="page section">
         <Reveal>
-          <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-end', flexWrap: 'wrap', gap: 24 }}>
-            <div>
-              <div className="label">Next case</div>
-              <h2 style={{ fontSize: 'clamp(48px, 7vw, 96px)', fontWeight: 700, letterSpacing: '-0.035em', marginTop: 20 }}>
-                {next.name} →
-              </h2>
-            </div>
+          <div className="cs-next-actions">
             <button className="btn btn-ghost" onClick={() => go(`case:${item.nextId}`)}>
               Next case <span className="arrow">→</span>
             </button>
