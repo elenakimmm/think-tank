@@ -4,7 +4,7 @@ const CASE_STUDIES = {
   aplus: {
     index: '01',
     name: 'A+ Nail School',
-    title: <>A+ Nail<br />School.</>,
+    title: <>A+ Nail<br />School</>,
     industry: 'Trade School & Education',
     engagement: '24 months',
     scope: 'Web, SEO, paid, CRM',
@@ -16,7 +16,7 @@ const CASE_STUDIES = {
       'A+ Nail School is a Chicagoland nail technician school built around a clear promise: polished for success. The school offers flexible enrollment, a 350-hour nail tech curriculum, student aid options, and business training for future salon professionals.',
       'Think Tank rebuilt the digital growth system around that offer: clearer positioning, a conversion-focused website, SEO content, paid acquisition, and CRM workflows that made student interest easier to capture and follow up.'
     ],
-    resultsTitle: <>A stronger school story,<br />built to enroll.</>,
+    resultsTitle: <><span>A stronger school</span><br /><span>story, built to enroll</span></>,
     resultsCopy: 'The case study now reflects the live A+ offer: flexible training, career support, certification advantages, and measurable demand growth.',
     metrics: [
       ['2', 'K+', 'Graduates highlighted by the school'],
@@ -49,7 +49,7 @@ const CASE_STUDIES = {
   hrhk: {
     index: '02',
     name: 'HRHK',
-    title: <>HRHK.</>,
+    title: <>HRHK</>,
     industry: 'Non-Profit Organization',
     engagement: '18 months',
     scope: 'Web, publications, advocacy',
@@ -61,7 +61,7 @@ const CASE_STUDIES = {
       'The Committee for Human Rights in North Korea is an advocacy and research organization focused on uncovering human rights abuses under the DPRK and educating the public on behalf of the North Korean people.',
       'Think Tank shaped the digital experience around HRNK’s real operating needs: a mission-led donation path, a large publications archive, events and hearings, newsletter growth, and high-impact education tools like the prison camp interactive.'
     ],
-    resultsTitle: <>Advocacy content,<br />built for action.</>,
+    resultsTitle: <><span>Advocacy content</span><br /><span>built for action</span></>,
     resultsCopy: 'The updated case study reflects the live HRNK site: mission clarity, report discoverability, donation pathways, and public education around North Korea’s prison camps.',
     metrics: [
       ['2001', '', 'Year HRNK was launched by foreign policy and human rights specialists'],
@@ -93,7 +93,7 @@ const CASE_STUDIES = {
   whitecap: {
     index: '03',
     name: 'WhiteCap',
-    title: <>WhiteCap<br />Institute.</>,
+    title: <>WhiteCap<br />Institute</>,
     industry: 'Dental Education & E-commerce',
     engagement: '16 months',
     scope: 'Web, courses, e-commerce',
@@ -105,7 +105,7 @@ const CASE_STUDIES = {
       'WhiteCap Institute is a Utah-based dental implant training facility offering continuing education courses built around guided live patient procedures, hands-on simulations, and instruction from implant professionals.',
       'Think Tank shaped the digital experience around WhiteCap’s strongest differentiators: a three-day implant bootcamp, real surgical training environments, CE credit credibility, and a course catalog that helps dentists choose the right next step.'
     ],
-    resultsTitle: <>Hands-on training,<br />built to convert.</>,
+    resultsTitle: <><span>Hands-on training</span><br /><span>built to convert</span></>,
     resultsCopy: 'The updated case study now reflects the live WhiteCap offer: implant CE courses, real clinical training, national provider credentials, and a clearer path from course interest to registration.',
     metrics: [
       ['2005', '', 'Year WhiteCap Institute was originally founded'],
@@ -138,7 +138,7 @@ const CASE_STUDIES = {
   icks: {
     index: '04',
     name: 'ICKS',
-    title: <>ICKS.</>,
+    title: <>ICKS</>,
     industry: 'Non-Profit Organization',
     engagement: '12 months',
     scope: 'Web, journal, donations',
@@ -150,7 +150,7 @@ const CASE_STUDIES = {
       'The International Council on Korean Studies is a nonprofit, nonpartisan organization dedicated to the advancement of Korean studies and research in Korean affairs in the United States and abroad.',
       'Think Tank shaped the digital experience around ICKS’s real mission: conferences, publications, the International Journal of Korean Studies, Korean reunification dialogue, Korean American engagement, leadership visibility, and donor support.'
     ],
-    resultsTitle: <>Scholarship,<br />made easier to follow.</>,
+    resultsTitle: <><span>Scholarship</span><br /><span>made easier to follow</span></>,
     resultsCopy: 'The updated case study now reflects the live ICKS site: journal access, annual conferences, leadership credibility, donation prompts, and Korean studies mission clarity.',
     metrics: [
       ['1996', '', 'Year ICKS was founded'],
@@ -184,7 +184,7 @@ const CASE_STUDIES = {
   hawaii: {
     index: '05',
     name: 'Hawaii',
-    title: <>Hawaii Elite<br />Chiropractic.</>,
+    title: <>Hawaii Elite<br />Chiropractic</>,
     industry: 'Healthcare Provider',
     engagement: '20 months',
     scope: 'Web, local SEO, booking',
@@ -196,7 +196,7 @@ const CASE_STUDIES = {
       'Hawaii Elite Chiropractic is a two-location chiropractic provider serving Aiea and Honolulu around the promise “Where Healing Meets Aloha.” The practice offers chiropractic treatment, Graston Technique, orthotics, cold laser therapy, and specialized care for athletes, families, military members, expecting mothers, retirees, and patients with back pain, neck pain, headaches, and migraines.',
       'Think Tank shaped the digital experience around patient trust and appointment intent: location-specific contact paths, service clarity, award-winning care, review credibility, and a smoother request-an-appointment journey.'
     ],
-    resultsTitle: <>Local care,<br />built to book.</>,
+    resultsTitle: <><span>Local care</span><br /><span>built to book</span></>,
     resultsCopy: 'The updated case study reflects the live Hawaii Elite Chiropractic site: two clinic locations, service education, patient satisfaction proof, award badges, and appointment conversion paths.',
     metrics: [
       ['2', '', 'Clinic locations supported: Aiea and Honolulu'],
@@ -230,7 +230,7 @@ const CASE_STUDIES = {
   abs: {
     index: '06',
     name: 'ABS French School',
-    title: <>ABS French<br />School.</>,
+    title: <>ABS French<br />School</>,
     industry: 'French Immersion Preschool',
     engagement: '14 months',
     scope: 'Web, admissions, SEO, CRM',
@@ -242,7 +242,7 @@ const CASE_STUDIES = {
       'Au Beau Séjour French Preschool is an Oakland French immersion preschool serving children ages 0 to 6 in a caring, safe environment. Its live site centers a 100% French immersion setting, whole-child learning, social emotional development, and the Éducation Nationale 2024 Program.',
       'Think Tank shaped the digital experience around parent confidence and admissions intent: clearer program discovery, campus storytelling, schedule-a-tour pathways, application flow, curriculum proof, reviews, and CRM follow-up.'
     ],
-    resultsTitle: <>Admissions clarity,<br />built for families.</>,
+    resultsTitle: <><span>Admissions clarity</span><br /><span>built for families</span></>,
     resultsCopy: 'The updated case study reflects the live ABS experience: French-speaking teachers, two Oakland campuses, daily gourmet meals, small classroom care, and a direct tour/application journey.',
     metrics: [
       ['0–6', '', 'Age range served from nursery through kindergarten'],
@@ -275,7 +275,7 @@ const CASE_STUDIES = {
   sta: {
     index: '07',
     name: 'Straight Talk Advisor',
-    title: <>Straight Talk<br />Advisor.</>,
+    title: <>Straight Talk<br />Advisor</>,
     industry: 'Executive Advisory & Consulting',
     engagement: 'Launch phase',
     scope: 'Brand, web, advisory funnel',
@@ -287,7 +287,7 @@ const CASE_STUDIES = {
       'Straight Talk Advisory is a high-impact advisory offer for founders, executives, and scaling startups. The site positions Ardy Sobhani as a hands-on mentor for consumer-product CEOs and COOs who need to increase revenue, cut costs, and scale sustainably.',
       'Think Tank shaped the digital experience around direct executive trust: a clear waitlist funnel, founder credibility from Oru Kayak, operational playbooks, fractional CEO/COO advisory, workshops, and strategic growth systems.'
     ],
-    resultsTitle: <>Executive clarity,<br />built to scale.</>,
+    resultsTitle: <><span>Executive clarity</span><br /><span>built to scale</span></>,
     resultsCopy: 'The case study reflects the live Straight Talk offer: hands-on mentorship, proven consumer-product playbooks, Idea-to-IPO experience, operational systems, and a direct path to book a call or join the waitlist.',
     metrics: [
       ['15', '+', 'Years of consumer-product operating experience referenced on the site'],
@@ -402,7 +402,7 @@ function CaseStudyPage({ go, caseId = 'aplus' }) {
           <div className="section-head">
             <div>
               <div className="label">Results</div>
-              <h2 style={{ marginTop: 22 }}>{item.resultsTitle}</h2>
+              <h2 className="cs-section-title cs-results-title">{item.resultsTitle}</h2>
             </div>
             <p className="right">{item.resultsCopy}</p>
           </div>
@@ -423,8 +423,8 @@ function CaseStudyPage({ go, caseId = 'aplus' }) {
           <Reveal>
             <div>
               <div className="label">Problems</div>
-              <h2 style={{ fontSize: 'clamp(36px, 5vw, 64px)', fontWeight: 700, letterSpacing: '-0.03em', lineHeight: 1, marginTop: 22 }}>
-                What we<br />walked into.
+              <h2 className="cs-section-title cs-problems-title">
+                <span>What we</span><br /><span>walked into</span>
               </h2>
             </div>
           </Reveal>
@@ -443,7 +443,7 @@ function CaseStudyPage({ go, caseId = 'aplus' }) {
           <div className="section-head">
             <div>
               <div className="label">Solutions</div>
-              <h2 style={{ marginTop: 22 }}>What we built.</h2>
+              <h2 className="cs-section-title">What we built</h2>
             </div>
           </div>
         </Reveal>
