@@ -171,8 +171,7 @@ function Footer({ go }) {
         <div>
           <h5>Follow</h5>
           <ul>
-            <li><a href="#">LinkedIn ↗</a></li>
-            <li><a href="#">Instagram ↗</a></li>
+            <li><a href="https://www.linkedin.com/company/think-tank-consulting-llc/" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></li>
           </ul>
         </div>
       </div>
